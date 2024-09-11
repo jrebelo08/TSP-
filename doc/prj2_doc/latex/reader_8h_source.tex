@@ -1,0 +1,47 @@
+\doxysection{reader.\+h}
+\hypertarget{reader_8h_source}{}\label{reader_8h_source}\index{C:/Users/rebel/Desktop/DA2.0-\/main/reader.h@{C:/Users/rebel/Desktop/DA2.0-\/main/reader.h}}
+\mbox{\hyperlink{reader_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ READER\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ READER\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <fstream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_graph_8h}{Classes/Graph.h}}"{}}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_reader}{Reader}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_edge}{Graph<int>}}\ \mbox{\hyperlink{class_reader_a5240a5b7560d240dfb61067e23c60019}{readAndParseStadium}}();}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_edge}{Graph<int>}}\ \mbox{\hyperlink{class_reader_a7c1f023060c35cbd4ef7f9ed7cdb1824}{readAndParseShipping}}();}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_edge}{Graph<int>}}\ \mbox{\hyperlink{class_reader_a5e147ae7cfda1ba1e03e6d8f0704ce8a}{readAndParseTourism}}();}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00041\ \ \ \ \ \mbox{\hyperlink{class_edge}{Graph<int>}}\ \mbox{\hyperlink{class_reader_a8a3d0fa678c9f44327a2412bd6888859}{readAndParse4\_2Extra\_Fully\_Connected\_Graphs}}(\textcolor{keyword}{const}\ std::string\ \mbox{\hyperlink{class_edge}{filename}},\ std::unordered\_map<\textcolor{keywordtype}{int},\ \mbox{\hyperlink{class_edge}{Vertex<int>}}*>\ \&\mbox{\hyperlink{class_edge}{vertexMap}},\ std::unordered\_map<std::string,\ \mbox{\hyperlink{class_edge}{Edge<int>}}*>\ \&\mbox{\hyperlink{class_edge}{edgeMap}});}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_edge}{Graph<int>}}\ \mbox{\hyperlink{class_reader_a5ffdee1e47517331abafa9f765d5e9e2}{readAndParseRealWorld\_Graphs}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_edge}{graphNumber}},\ std::unordered\_map<\textcolor{keywordtype}{int},\ \mbox{\hyperlink{class_edge}{Vertex<int>}}*>\ \&\mbox{\hyperlink{class_edge}{vertexMap}},\ std::unordered\_map<std::string,\ \mbox{\hyperlink{class_edge}{Edge<int>}}*>\ \&\mbox{\hyperlink{class_edge}{edgeMap}});}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00063\ \ \ \ \ \mbox{\hyperlink{class_edge}{Graph<int>}}\ \mbox{\hyperlink{class_reader_abb78d8212144696b4fda4902e74ba24b}{readAndParseRealWorld\_Graphs4\_2}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_edge}{graphNumber}},\ std::unordered\_map<\textcolor{keywordtype}{int},\ \mbox{\hyperlink{class_edge}{Vertex<int>}}*>\ \&\mbox{\hyperlink{class_edge}{vertexMap}},\ std::unordered\_map<std::string,\ \mbox{\hyperlink{class_edge}{Edge<int>}}*>\ \&\mbox{\hyperlink{class_edge}{edgeMap}});}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_reader_1_1_coordinates}{Coordinates}}\ \{}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_reader_1_1_coordinates_a29cdd862b25e7033df5640c90efc85ed}{latitude}};\ }
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{struct_reader_1_1_coordinates_a49c148d366005bb3882c61d1e4e80ad5}{longitude}};\ }
+\DoxyCodeLine{00071\ \ \ \ \ \};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_reader_a9b3bf4be0b4feda159512cb5cfc662d3}{convert\_to\_radians}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_edge}{coord}});}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00088\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_reader_aef8c5189f5698346b3f76bd3b7561d41}{Haversine}}(\textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_edge}{lat1}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_edge}{lon1}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_edge}{lat2}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_edge}{lon2}});}
+\DoxyCodeLine{00089\ }
+\DoxyCodeLine{00094\ \ \ \ \ std::unordered\_map<int,\ Coordinates>\ \mbox{\hyperlink{class_reader_a2efc52d2a040e99581c20f9167d6d154}{readCoordinates}}();}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00103\ \ \ \ \ \textcolor{keyword}{static}\ std::vector<std::vector<int>>\ \mbox{\hyperlink{class_reader_accbb51de5e1f94e242ffdfdd72cdf7a3}{kMeansClustering}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_edge}{Graph<int>}}\&\ \mbox{\hyperlink{class_edge}{graph}},\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_edge}{k}},\ \textcolor{keyword}{const}\ std::unordered\_map<int,\ Coordinates>\&\ \mbox{\hyperlink{class_edge}{coordinates}});}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00105\ }
+\DoxyCodeLine{00106\ \ \ \ \ \textcolor{keyword}{static}\ std::unordered\_map<int,\ Reader::Coordinates>\ \mbox{\hyperlink{class_reader_accca31daccce6266ec7d283d80622f61}{readCoordinatesRealWorldGraph}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_edge}{type}});}
+\DoxyCodeLine{00107\ \};}
+\DoxyCodeLine{00108\ }
+\DoxyCodeLine{00109\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ READER\_H\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

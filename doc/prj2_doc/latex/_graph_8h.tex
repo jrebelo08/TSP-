@@ -1,0 +1,299 @@
+\doxysection{C\+:/\+Users/rebel/\+Desktop/\+DA2.0-\/main/\+Classes/\+Graph.h File Reference}
+\hypertarget{_graph_8h}{}\label{_graph_8h}\index{C:/Users/rebel/Desktop/DA2.0-\/main/Classes/Graph.h@{C:/Users/rebel/Desktop/DA2.0-\/main/Classes/Graph.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$queue$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_vertex}{Vertex$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{class_edge}{Edge$<$ T $>$}}
+\item 
+class \mbox{\hyperlink{class_graph}{Graph$<$ T $>$}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#\mbox{\hyperlink{class_edge}{define}} \mbox{\hyperlink{_graph_8h_a12c2040f25d8e3a7b9e1c2024c618cb6}{INF}}~std\+::numeric\+\_\+limits$<$\mbox{\hyperlink{class_edge}{double}}$>$\mbox{\hyperlink{class_edge}{\+::max}}()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_graph_8h_a2dcfbbd52d1a5dda3bd24224143d85b1}{prim\+MST}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{start\+Idx}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_graph_8h_ad56527992afe31a371065e795da57d25}{delete\+Matrix}} (\mbox{\hyperlink{class_edge}{int}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_edge}{m}}, \mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{n}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_graph_8h_af077bc8682a1a1d97e30b08eb1131b19}{delete\+Matrix}} (\mbox{\hyperlink{class_edge}{double}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_edge}{m}}, \mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{n}})
+\item 
+{\footnotesize template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ }\\std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_graph_8h_a5effe805d8eb2fb3413f5c16b0df80e0}{prim\+MST}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{start\+Idx}})
+\begin{DoxyCompactList}\small\item\em Finds the minimum spanning tree (MST) of the graph using Prim\textquotesingle{}s algorithm. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ }\\std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_graph_8h_a64a7adaa46a4ecc3496cb1056b02079d}{prim\+MSTMaps}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{start\+Idx}}, std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_edge}{vertex\+Map}}, std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_edge}{edge\+Map}})
+\begin{DoxyCompactList}\small\item\em Finds the minimum spanning tree (MST) of a graph using Prim\textquotesingle{}s algorithm. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ }\\std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_graph_8h_af544eb562864099944a264f20c145957}{nearest\+Neighbour}} (\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&\mbox{\hyperlink{class_edge}{graph}})
+\begin{DoxyCompactList}\small\item\em Constructs a tour using the nearest neighbor heuristic. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ }\\std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_graph_8h_a78654126a5298f6bee6232a933d3e0fc}{nearest\+Neighbour\+Medium}} (\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&\mbox{\hyperlink{class_edge}{graph}}, std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_edge}{vertex\+Map}}, std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_edge}{edge\+Map}})
+\begin{DoxyCompactList}\small\item\em Constructs a tour using the nearest neighbor heuristic with medium complexity. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ }\\std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_graph_8h_ad1daa2652fac188705f3eeea3448d4a6}{nearest\+Neighbour\+Node}} (\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&\mbox{\hyperlink{class_edge}{graph}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_edge}{start\+Vertex}}, std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_edge}{vertex\+Map}}, std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_edge}{edge\+Map}})
+\begin{DoxyCompactList}\small\item\em Constructs a tour starting from a specified vertex using the nearest neighbor heuristic. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ }\\std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \mbox{\hyperlink{_graph_8h_a740c806a13e07e644714e36215bf27f4}{nearest\+Neighbor\+For\+Cluster}} (\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&\mbox{\hyperlink{class_edge}{graph}}, \mbox{\hyperlink{class_edge}{const}} std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&\mbox{\hyperlink{class_edge}{cluster}})
+\begin{DoxyCompactList}\small\item\em Constructs a tour for a cluster of vertices using the nearest neighbor heuristic. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ }\\\mbox{\hyperlink{class_edge}{double}} \mbox{\hyperlink{_graph_8h_a47249b5097efa21139021dd49238531a}{tour\+Cost}} (\mbox{\hyperlink{class_edge}{const}} std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_edge}{tour}}, \mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&\mbox{\hyperlink{class_edge}{graph}})
+\begin{DoxyCompactList}\small\item\em Computes the total cost of a tour. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ }\\std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_graph_8h_abc79874de1eca351e1e049313fac4bb8}{two\+Opt\+Exchange}} (\mbox{\hyperlink{class_edge}{const}} std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_edge}{tour}}, \mbox{\hyperlink{class_edge}{size\+\_\+t}} \mbox{\hyperlink{class_edge}{i}}, \mbox{\hyperlink{class_edge}{size\+\_\+t}} \mbox{\hyperlink{class_edge}{j}})
+\begin{DoxyCompactList}\small\item\em Performs a 2-\/opt exchange on a tour to improve its quality. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ }\\std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{_graph_8h_af76cd95bcca228978ffe98119dbb730e}{lin\+Kernighan}} (\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&\mbox{\hyperlink{class_edge}{graph}}, std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_edge}{vertex\+Map}}, std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_edge}{edge\+Map}})
+\begin{DoxyCompactList}\small\item\em Performs the Lin-\/\+Kernighan heuristic to improve the quality of a tour. \end{DoxyCompactList}\item 
+{\footnotesize template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ }\\\mbox{\hyperlink{class_edge}{double}} \mbox{\hyperlink{_graph_8h_a533f3cd2a0fbbe680c8980e20ed1212e}{compute\+Tour\+Length}} (\mbox{\hyperlink{class_edge}{const}} std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&\mbox{\hyperlink{class_edge}{tour}}, \mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&\mbox{\hyperlink{class_edge}{graph}})
+\begin{DoxyCompactList}\small\item\em Computes the length of a tour. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{_graph_8h_a12c2040f25d8e3a7b9e1c2024c618cb6}\label{_graph_8h_a12c2040f25d8e3a7b9e1c2024c618cb6} 
+\index{Graph.h@{Graph.h}!INF@{INF}}
+\index{INF@{INF}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{INF}{INF}}
+{\footnotesize\ttfamily \#\mbox{\hyperlink{class_edge}{define}} INF~std\+::numeric\+\_\+limits$<$\mbox{\hyperlink{class_edge}{double}}$>$\mbox{\hyperlink{class_edge}{\+::max}}()}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_graph_8h_a533f3cd2a0fbbe680c8980e20ed1212e}\label{_graph_8h_a533f3cd2a0fbbe680c8980e20ed1212e} 
+\index{Graph.h@{Graph.h}!computeTourLength@{computeTourLength}}
+\index{computeTourLength@{computeTourLength}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{computeTourLength()}{computeTourLength()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+\mbox{\hyperlink{class_edge}{double}} compute\+Tour\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&}]{tour,  }\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&}]{graph }\end{DoxyParamCaption})}
+
+
+
+Computes the length of a tour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tour} & A vector of vertex IDs representing the tour. \\
+\hline
+{\em graph} & The graph containing the edges connecting the vertices. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The length of the tour. @timecomplexity O(\+N), where N is the number of vertices in the tour. 
+\end{DoxyReturn}
+\Hypertarget{_graph_8h_af077bc8682a1a1d97e30b08eb1131b19}\label{_graph_8h_af077bc8682a1a1d97e30b08eb1131b19} 
+\index{Graph.h@{Graph.h}!deleteMatrix@{deleteMatrix}}
+\index{deleteMatrix@{deleteMatrix}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{deleteMatrix()}{deleteMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} delete\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{double}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{m,  }\item[{\mbox{\hyperlink{class_edge}{int}}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{_graph_8h_ad56527992afe31a371065e795da57d25}\label{_graph_8h_ad56527992afe31a371065e795da57d25} 
+\index{Graph.h@{Graph.h}!deleteMatrix@{deleteMatrix}}
+\index{deleteMatrix@{deleteMatrix}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{deleteMatrix()}{deleteMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} delete\+Matrix (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{m,  }\item[{\mbox{\hyperlink{class_edge}{int}}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\Hypertarget{_graph_8h_af76cd95bcca228978ffe98119dbb730e}\label{_graph_8h_af76cd95bcca228978ffe98119dbb730e} 
+\index{Graph.h@{Graph.h}!linKernighan@{linKernighan}}
+\index{linKernighan@{linKernighan}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{linKernighan()}{linKernighan()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ lin\+Kernighan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&}]{graph,  }\item[{std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$}]{vertex\+Map,  }\item[{std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$}]{edge\+Map }\end{DoxyParamCaption})}
+
+
+
+Performs the Lin-\/\+Kernighan heuristic to improve the quality of a tour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & The graph on which to perform the Lin-\/\+Kernighan heuristic. \\
+\hline
+{\em vertex\+Map} & A map containing vertex IDs and pointers to vertex objects. \\
+\hline
+{\em edge\+Map} & A map containing edge keys and pointers to edge objects. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of vertices representing the improved tour. @timecomplexity O(n\texorpdfstring{$^\wedge$}{\string^}3), where n is the number of vertices in the graph. 
+\end{DoxyReturn}
+\Hypertarget{_graph_8h_a740c806a13e07e644714e36215bf27f4}\label{_graph_8h_a740c806a13e07e644714e36215bf27f4} 
+\index{Graph.h@{Graph.h}!nearestNeighborForCluster@{nearestNeighborForCluster}}
+\index{nearestNeighborForCluster@{nearestNeighborForCluster}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{nearestNeighborForCluster()}{nearestNeighborForCluster()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ nearest\+Neighbor\+For\+Cluster (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&}]{graph,  }\item[{\mbox{\hyperlink{class_edge}{const}} std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&}]{cluster }\end{DoxyParamCaption})}
+
+
+
+Constructs a tour for a cluster of vertices using the nearest neighbor heuristic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & The graph on which to perform the nearest neighbor search. \\
+\hline
+{\em cluster} & A vector of vertex IDs representing the cluster of vertices. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of vertex IDs representing the tour. @timecomplexity O(\+V\texorpdfstring{$^\wedge$}{\string^}2), where V is the number of vertices. 
+\end{DoxyReturn}
+\Hypertarget{_graph_8h_af544eb562864099944a264f20c145957}\label{_graph_8h_af544eb562864099944a264f20c145957} 
+\index{Graph.h@{Graph.h}!nearestNeighbour@{nearestNeighbour}}
+\index{nearestNeighbour@{nearestNeighbour}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{nearestNeighbour()}{nearestNeighbour()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ nearest\+Neighbour (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&}]{graph }\end{DoxyParamCaption})}
+
+
+
+Constructs a tour using the nearest neighbor heuristic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & The graph on which to perform the nearest neighbor search. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of vertices representing the tour. @timecomplexity O(\+V\texorpdfstring{$^\wedge$}{\string^}2), where V is the number of vertices. 
+\end{DoxyReturn}
+\Hypertarget{_graph_8h_a78654126a5298f6bee6232a933d3e0fc}\label{_graph_8h_a78654126a5298f6bee6232a933d3e0fc} 
+\index{Graph.h@{Graph.h}!nearestNeighbourMedium@{nearestNeighbourMedium}}
+\index{nearestNeighbourMedium@{nearestNeighbourMedium}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{nearestNeighbourMedium()}{nearestNeighbourMedium()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ nearest\+Neighbour\+Medium (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&}]{graph,  }\item[{std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$}]{vertex\+Map,  }\item[{std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$}]{edge\+Map }\end{DoxyParamCaption})}
+
+
+
+Constructs a tour using the nearest neighbor heuristic with medium complexity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & The graph on which to perform the nearest neighbor search. \\
+\hline
+{\em vertex\+Map} & A map containing vertex IDs and pointers to vertex objects. \\
+\hline
+{\em edge\+Map} & A map containing edge keys and pointers to edge objects. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of vertices representing the tour. @timecomplexity O(\+V\texorpdfstring{$^\wedge$}{\string^}2), where V is the number of vertices. 
+\end{DoxyReturn}
+\Hypertarget{_graph_8h_ad1daa2652fac188705f3eeea3448d4a6}\label{_graph_8h_ad1daa2652fac188705f3eeea3448d4a6} 
+\index{Graph.h@{Graph.h}!nearestNeighbourNode@{nearestNeighbourNode}}
+\index{nearestNeighbourNode@{nearestNeighbourNode}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{nearestNeighbourNode()}{nearestNeighbourNode()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ nearest\+Neighbour\+Node (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&}]{graph,  }\item[{\mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*}}]{start\+Vertex,  }\item[{std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$}]{vertex\+Map,  }\item[{std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$}]{edge\+Map }\end{DoxyParamCaption})}
+
+
+
+Constructs a tour starting from a specified vertex using the nearest neighbor heuristic. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & The graph on which to perform the nearest neighbor search. \\
+\hline
+{\em start\+Vertex} & The starting vertex of the tour. \\
+\hline
+{\em vertex\+Map} & A map containing vertex IDs and pointers to vertex objects. \\
+\hline
+{\em edge\+Map} & A map containing edge keys and pointers to edge objects. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of vertices representing the tour. @timecomplexity O(\+V\texorpdfstring{$^\wedge$}{\string^}2), where V is the number of vertices. 
+\end{DoxyReturn}
+\Hypertarget{_graph_8h_a2dcfbbd52d1a5dda3bd24224143d85b1}\label{_graph_8h_a2dcfbbd52d1a5dda3bd24224143d85b1} 
+\index{Graph.h@{Graph.h}!primMST@{primMST}}
+\index{primMST@{primMST}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{primMST()}{primMST()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ prim\+MST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{start\+Idx }\end{DoxyParamCaption})}
+
+\Hypertarget{_graph_8h_a5effe805d8eb2fb3413f5c16b0df80e0}\label{_graph_8h_a5effe805d8eb2fb3413f5c16b0df80e0} 
+\index{Graph.h@{Graph.h}!primMST@{primMST}}
+\index{primMST@{primMST}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{primMST()}{primMST()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ prim\+MST (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{start\+Idx }\end{DoxyParamCaption})}
+
+
+
+Finds the minimum spanning tree (MST) of the graph using Prim\textquotesingle{}s algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Idx} & The index of the starting vertex. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of pointers to edges representing the MST. @timecomplexity O(\+E \texorpdfstring{$\ast$}{*} log(\+V)), where E is the number of edges and V is the number of vertices. 
+\end{DoxyReturn}
+\Hypertarget{_graph_8h_a64a7adaa46a4ecc3496cb1056b02079d}\label{_graph_8h_a64a7adaa46a4ecc3496cb1056b02079d} 
+\index{Graph.h@{Graph.h}!primMSTMaps@{primMSTMaps}}
+\index{primMSTMaps@{primMSTMaps}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{primMSTMaps()}{primMSTMaps()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ prim\+MSTMaps (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{start\+Idx,  }\item[{std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&}]{vertex\+Map,  }\item[{std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&}]{edge\+Map }\end{DoxyParamCaption})}
+
+
+
+Finds the minimum spanning tree (MST) of a graph using Prim\textquotesingle{}s algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em start\+Idx} & The index of the starting vertex. \\
+\hline
+{\em vertex\+Map} & A map containing vertex IDs and pointers to vertex objects. \\
+\hline
+{\em edge\+Map} & A map containing edge keys and pointers to edge objects. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of edges representing the MST. @timecomplexity O(\+E \texorpdfstring{$\ast$}{*} log(\+V)), where E is the number of edges and V is the number of vertices. 
+\end{DoxyReturn}
+\Hypertarget{_graph_8h_a47249b5097efa21139021dd49238531a}\label{_graph_8h_a47249b5097efa21139021dd49238531a} 
+\index{Graph.h@{Graph.h}!tourCost@{tourCost}}
+\index{tourCost@{tourCost}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{tourCost()}{tourCost()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+\mbox{\hyperlink{class_edge}{double}} tour\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&}]{tour,  }\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \&}]{graph }\end{DoxyParamCaption})}
+
+
+
+Computes the total cost of a tour. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tour} & A vector of vertices representing the tour. \\
+\hline
+{\em graph} & The graph containing the edges connecting the vertices. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The total cost of the tour. @timecomplexity O(\+N), where N is the number of vertices in the tour. 
+\end{DoxyReturn}
+\Hypertarget{_graph_8h_abc79874de1eca351e1e049313fac4bb8}\label{_graph_8h_abc79874de1eca351e1e049313fac4bb8} 
+\index{Graph.h@{Graph.h}!twoOptExchange@{twoOptExchange}}
+\index{twoOptExchange@{twoOptExchange}!Graph.h@{Graph.h}}
+\doxysubsubsection{\texorpdfstring{twoOptExchange()}{twoOptExchange()}}
+{\footnotesize\ttfamily template$<$\mbox{\hyperlink{class_edge}{class}} \mbox{\hyperlink{class_edge}{T}} $>$ \\
+std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ two\+Opt\+Exchange (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::vector$<$ \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{T}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&}]{tour,  }\item[{\mbox{\hyperlink{class_edge}{size\+\_\+t}}}]{i,  }\item[{\mbox{\hyperlink{class_edge}{size\+\_\+t}}}]{j }\end{DoxyParamCaption})}
+
+
+
+Performs a 2-\/opt exchange on a tour to improve its quality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tour} & A vector of vertices representing the tour. \\
+\hline
+{\em i} & The index of the first vertex to exchange. \\
+\hline
+{\em j} & The index of the second vertex to exchange. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A new tour resulting from the 2-\/opt exchange. @timecomplexity O(n\texorpdfstring{$^\wedge$}{\string^}2), where n is the number of vertices in the tour. 
+\end{DoxyReturn}

@@ -1,0 +1,274 @@
+\doxysection{Reader Class Reference}
+\hypertarget{class_reader}{}\label{class_reader}\index{Reader@{Reader}}
+
+
+A class for reading and parsing various types of graph data.  
+
+
+
+
+{\ttfamily \#include $<$reader.\+h$>$}
+
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_reader_1_1_coordinates}{Coordinates}}
+\begin{DoxyCompactList}\small\item\em Structure to hold latitude and longitude coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \mbox{\hyperlink{class_reader_a5240a5b7560d240dfb61067e23c60019}{read\+And\+Parse\+Stadium}} ()
+\begin{DoxyCompactList}\small\item\em Reads and parses a graph representing stadium data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \mbox{\hyperlink{class_reader_a7c1f023060c35cbd4ef7f9ed7cdb1824}{read\+And\+Parse\+Shipping}} ()
+\begin{DoxyCompactList}\small\item\em Reads and parses a graph representing shipping data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \mbox{\hyperlink{class_reader_a8a3d0fa678c9f44327a2412bd6888859}{read\+And\+Parse4\+\_\+2\+Extra\+\_\+\+Fully\+\_\+\+Connected\+\_\+\+Graphs}} (\mbox{\hyperlink{class_edge}{const}} std\+::string \mbox{\hyperlink{class_edge}{filename}}, std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_edge}{vertex\+Map}}, std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_edge}{edge\+Map}})
+\begin{DoxyCompactList}\small\item\em Reads and parses a graph and makes it fully connected. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \mbox{\hyperlink{class_reader_abb78d8212144696b4fda4902e74ba24b}{read\+And\+Parse\+Real\+World\+\_\+\+Graphs4\+\_\+2}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{graph\+Number}}, std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_edge}{vertex\+Map}}, std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_edge}{edge\+Map}})
+\begin{DoxyCompactList}\small\item\em Reads and parses a real-\/world graph from a file based on the specified graph number. In this specific parsing, we are using 2 unordered maps, one for vertex\textquotesingle{}s and the other for edges, this prevent the exhaustive search that was being performed in the find vertex and add\+Egde, methods. We also discard those functions to meet the performance requirements, creating new ones, that are more efficient, receiving the objects instead of searching them. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{struct_reader_1_1_coordinates}{Coordinates}} $>$ \mbox{\hyperlink{class_reader_a2efc52d2a040e99581c20f9167d6d154}{read\+Coordinates}} ()
+\begin{DoxyCompactList}\small\item\em Reads coordinates from a CSV file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_edge}{static}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \mbox{\hyperlink{class_reader_a5e147ae7cfda1ba1e03e6d8f0704ce8a}{read\+And\+Parse\+Tourism}} ()
+\begin{DoxyCompactList}\small\item\em Reads and parses a graph representing tourism data. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_edge}{static}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \mbox{\hyperlink{class_reader_a5ffdee1e47517331abafa9f765d5e9e2}{read\+And\+Parse\+Real\+World\+\_\+\+Graphs}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{graph\+Number}}, std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_edge}{vertex\+Map}}, std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_edge}{edge\+Map}})
+\begin{DoxyCompactList}\small\item\em Reads and parses a real-\/world graph from a file based on the specified graph number. In this specific parsing, we are using 2 unordered maps, one for vertex\textquotesingle{}s and the other for edges, this prevent the exhaustive search that was being performed in the find vertex and add\+Egde, methods. We also discard those functions to meet the performance requirements, creating new ones, that are more efficient, receiving the objects instead of searching them. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_edge}{static}} \mbox{\hyperlink{class_edge}{double}} \mbox{\hyperlink{class_reader_a9b3bf4be0b4feda159512cb5cfc662d3}{convert\+\_\+to\+\_\+radians}} (\mbox{\hyperlink{class_edge}{double}} \mbox{\hyperlink{class_edge}{coord}})
+\begin{DoxyCompactList}\small\item\em Converts degrees to radians. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_edge}{static}} \mbox{\hyperlink{class_edge}{double}} \mbox{\hyperlink{class_reader_aef8c5189f5698346b3f76bd3b7561d41}{Haversine}} (\mbox{\hyperlink{class_edge}{double}} \mbox{\hyperlink{class_edge}{lat1}}, \mbox{\hyperlink{class_edge}{double}} \mbox{\hyperlink{class_edge}{lon1}}, \mbox{\hyperlink{class_edge}{double}} \mbox{\hyperlink{class_edge}{lat2}}, \mbox{\hyperlink{class_edge}{double}} \mbox{\hyperlink{class_edge}{lon2}})
+\begin{DoxyCompactList}\small\item\em Computes the Haversine distance between two points given their coordinates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_edge}{static}} std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ $>$ \mbox{\hyperlink{class_reader_accbb51de5e1f94e242ffdfdd72cdf7a3}{k\+Means\+Clustering}} (\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&\mbox{\hyperlink{class_edge}{graph}}, \mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{k}}, \mbox{\hyperlink{class_edge}{const}} std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{struct_reader_1_1_coordinates}{Coordinates}} $>$ \&\mbox{\hyperlink{class_edge}{coordinates}})
+\begin{DoxyCompactList}\small\item\em Performs k-\/means clustering on a graph based on geographical coordinates. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_edge}{static}} std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{struct_reader_1_1_coordinates}{Reader\+::\+Coordinates}} $>$ \mbox{\hyperlink{class_reader_accca31daccce6266ec7d283d80622f61}{read\+Coordinates\+Real\+World\+Graph}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{type}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A class for reading and parsing various types of graph data. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_reader_a9b3bf4be0b4feda159512cb5cfc662d3}\label{class_reader_a9b3bf4be0b4feda159512cb5cfc662d3} 
+\index{Reader@{Reader}!convert\_to\_radians@{convert\_to\_radians}}
+\index{convert\_to\_radians@{convert\_to\_radians}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{convert\_to\_radians()}{convert\_to\_radians()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{double}} Reader\+::convert\+\_\+to\+\_\+radians (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{double}}}]{coord }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Converts degrees to radians. 
+
+Converts a coordinate from degrees to radians.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & The coordinate value in degrees. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The coordinate value in radians.
+\end{DoxyReturn}
+This function takes a coordinate in degrees and converts it to radians.
+
+
+\begin{DoxyParams}{Parameters}
+{\em coord} & The coordinate in degrees. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The coordinate in radians. 
+\end{DoxyReturn}
+\Hypertarget{class_reader_aef8c5189f5698346b3f76bd3b7561d41}\label{class_reader_aef8c5189f5698346b3f76bd3b7561d41} 
+\index{Reader@{Reader}!Haversine@{Haversine}}
+\index{Haversine@{Haversine}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{Haversine()}{Haversine()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{double}} Reader\+::\+Haversine (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{double}}}]{lat1,  }\item[{\mbox{\hyperlink{class_edge}{double}}}]{lon1,  }\item[{\mbox{\hyperlink{class_edge}{double}}}]{lat2,  }\item[{\mbox{\hyperlink{class_edge}{double}}}]{lon2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Computes the Haversine distance between two points given their coordinates. 
+
+Calculates the Haversine distance between two points given their latitude and longitude.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lat1} & Latitude of the first point. \\
+\hline
+{\em lon1} & Longitude of the first point. \\
+\hline
+{\em lat2} & Latitude of the second point. \\
+\hline
+{\em lon2} & Longitude of the second point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The Haversine distance between the two points.
+\end{DoxyReturn}
+This function computes the Haversine distance between two points on the Earth\textquotesingle{}s surface, specified by their latitude and longitude in degrees.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lat1} & Latitude of the first point in degrees. \\
+\hline
+{\em lon1} & Longitude of the first point in degrees. \\
+\hline
+{\em lat2} & Latitude of the second point in degrees. \\
+\hline
+{\em lon2} & Longitude of the second point in degrees. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+double The Haversine distance between the two points in meters. 
+\end{DoxyReturn}
+\Hypertarget{class_reader_accbb51de5e1f94e242ffdfdd72cdf7a3}\label{class_reader_accbb51de5e1f94e242ffdfdd72cdf7a3} 
+\index{Reader@{Reader}!kMeansClustering@{kMeansClustering}}
+\index{kMeansClustering@{kMeansClustering}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{kMeansClustering()}{kMeansClustering()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ $>$ Reader\+::k\+Means\+Clustering (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&}]{graph,  }\item[{\mbox{\hyperlink{class_edge}{int}}}]{k,  }\item[{\mbox{\hyperlink{class_edge}{const}} std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{struct_reader_1_1_coordinates}{Coordinates}} $>$ \&}]{coordinates }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Performs k-\/means clustering on a graph based on geographical coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & The graph to cluster. \\
+\hline
+{\em k} & The number of clusters. \\
+\hline
+{\em coordinates} & A map containing node IDs and their coordinates. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector of clusters, where each cluster is represented by a vector of node IDs. 
+\end{DoxyReturn}
+\Hypertarget{class_reader_a8a3d0fa678c9f44327a2412bd6888859}\label{class_reader_a8a3d0fa678c9f44327a2412bd6888859} 
+\index{Reader@{Reader}!readAndParse4\_2Extra\_Fully\_Connected\_Graphs@{readAndParse4\_2Extra\_Fully\_Connected\_Graphs}}
+\index{readAndParse4\_2Extra\_Fully\_Connected\_Graphs@{readAndParse4\_2Extra\_Fully\_Connected\_Graphs}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{readAndParse4\_2Extra\_Fully\_Connected\_Graphs()}{readAndParse4\_2Extra\_Fully\_Connected\_Graphs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ Reader\+::read\+And\+Parse4\+\_\+2\+Extra\+\_\+\+Fully\+\_\+\+Connected\+\_\+\+Graphs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::string}]{filename,  }\item[{std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&}]{vertex\+Map,  }\item[{std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&}]{edge\+Map }\end{DoxyParamCaption})}
+
+
+
+Reads and parses a graph and makes it fully connected. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the graph data. \\
+\hline
+{\em vertex\+Map} & A map containing vertex IDs and pointers to vertex objects. \\
+\hline
+{\em edge\+Map} & A map containing edge keys and pointers to edge objects. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A fully connected graph. 
+\end{DoxyReturn}
+\Hypertarget{class_reader_a5ffdee1e47517331abafa9f765d5e9e2}\label{class_reader_a5ffdee1e47517331abafa9f765d5e9e2} 
+\index{Reader@{Reader}!readAndParseRealWorld\_Graphs@{readAndParseRealWorld\_Graphs}}
+\index{readAndParseRealWorld\_Graphs@{readAndParseRealWorld\_Graphs}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{readAndParseRealWorld\_Graphs()}{readAndParseRealWorld\_Graphs()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ Reader\+::read\+And\+Parse\+Real\+World\+\_\+\+Graphs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{graph\+Number,  }\item[{std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&}]{vertex\+Map,  }\item[{std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&}]{edge\+Map }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads and parses a real-\/world graph from a file based on the specified graph number. In this specific parsing, we are using 2 unordered maps, one for vertex\textquotesingle{}s and the other for edges, this prevent the exhaustive search that was being performed in the find vertex and add\+Egde, methods. We also discard those functions to meet the performance requirements, creating new ones, that are more efficient, receiving the objects instead of searching them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph\+Number} & The number of the graph to read and parse. \\
+\hline
+{\em vertex\+Map} & A map containing vertex IDs and pointers to vertex objects. \\
+\hline
+{\em edge\+Map} & A map containing edge keys and pointers to edge objects. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A real-\/world graph. 
+\end{DoxyReturn}
+\Hypertarget{class_reader_abb78d8212144696b4fda4902e74ba24b}\label{class_reader_abb78d8212144696b4fda4902e74ba24b} 
+\index{Reader@{Reader}!readAndParseRealWorld\_Graphs4\_2@{readAndParseRealWorld\_Graphs4\_2}}
+\index{readAndParseRealWorld\_Graphs4\_2@{readAndParseRealWorld\_Graphs4\_2}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{readAndParseRealWorld\_Graphs4\_2()}{readAndParseRealWorld\_Graphs4\_2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ Reader\+::read\+And\+Parse\+Real\+World\+\_\+\+Graphs4\+\_\+2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{graph\+Number,  }\item[{std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&}]{vertex\+Map,  }\item[{std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&}]{edge\+Map }\end{DoxyParamCaption})}
+
+
+
+Reads and parses a real-\/world graph from a file based on the specified graph number. In this specific parsing, we are using 2 unordered maps, one for vertex\textquotesingle{}s and the other for edges, this prevent the exhaustive search that was being performed in the find vertex and add\+Egde, methods. We also discard those functions to meet the performance requirements, creating new ones, that are more efficient, receiving the objects instead of searching them. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph\+Number} & The number of the graph to read and parse. \\
+\hline
+{\em vertex\+Map} & A map containing vertex IDs and pointers to vertex objects. \\
+\hline
+{\em edge\+Map} & A map containing edge keys and pointers to edge objects. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A real-\/world graph. 
+\end{DoxyReturn}
+\Hypertarget{class_reader_a7c1f023060c35cbd4ef7f9ed7cdb1824}\label{class_reader_a7c1f023060c35cbd4ef7f9ed7cdb1824} 
+\index{Reader@{Reader}!readAndParseShipping@{readAndParseShipping}}
+\index{readAndParseShipping@{readAndParseShipping}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{readAndParseShipping()}{readAndParseShipping()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ Reader\+::read\+And\+Parse\+Shipping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads and parses a graph representing shipping data. 
+
+\begin{DoxyReturn}{Returns}
+A graph representing shipping data. 
+\end{DoxyReturn}
+\Hypertarget{class_reader_a5240a5b7560d240dfb61067e23c60019}\label{class_reader_a5240a5b7560d240dfb61067e23c60019} 
+\index{Reader@{Reader}!readAndParseStadium@{readAndParseStadium}}
+\index{readAndParseStadium@{readAndParseStadium}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{readAndParseStadium()}{readAndParseStadium()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ Reader\+::read\+And\+Parse\+Stadium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads and parses a graph representing stadium data. 
+
+\begin{DoxyReturn}{Returns}
+A graph representing stadium data. 
+\end{DoxyReturn}
+\Hypertarget{class_reader_a5e147ae7cfda1ba1e03e6d8f0704ce8a}\label{class_reader_a5e147ae7cfda1ba1e03e6d8f0704ce8a} 
+\index{Reader@{Reader}!readAndParseTourism@{readAndParseTourism}}
+\index{readAndParseTourism@{readAndParseTourism}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{readAndParseTourism()}{readAndParseTourism()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ Reader\+::read\+And\+Parse\+Tourism (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Reads and parses a graph representing tourism data. 
+
+\begin{DoxyReturn}{Returns}
+A graph representing tourism data. 
+\end{DoxyReturn}
+\Hypertarget{class_reader_a2efc52d2a040e99581c20f9167d6d154}\label{class_reader_a2efc52d2a040e99581c20f9167d6d154} 
+\index{Reader@{Reader}!readCoordinates@{readCoordinates}}
+\index{readCoordinates@{readCoordinates}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{readCoordinates()}{readCoordinates()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{struct_reader_1_1_coordinates}{Reader\+::\+Coordinates}} $>$ Reader\+::read\+Coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Reads coordinates from a CSV file. 
+
+\begin{DoxyReturn}{Returns}
+A map containing node IDs and their corresponding coordinates. 
+\end{DoxyReturn}
+\Hypertarget{class_reader_accca31daccce6266ec7d283d80622f61}\label{class_reader_accca31daccce6266ec7d283d80622f61} 
+\index{Reader@{Reader}!readCoordinatesRealWorldGraph@{readCoordinatesRealWorldGraph}}
+\index{readCoordinatesRealWorldGraph@{readCoordinatesRealWorldGraph}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{readCoordinatesRealWorldGraph()}{readCoordinatesRealWorldGraph()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ \mbox{\hyperlink{class_edge}{int}}, \mbox{\hyperlink{struct_reader_1_1_coordinates}{Reader\+::\+Coordinates}} $>$ Reader\+::read\+Coordinates\+Real\+World\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/rebel/\+Desktop/\+DA2.\+0-\/main/\mbox{\hyperlink{reader_8h}{reader.\+h}}\item 
+C\+:/\+Users/rebel/\+Desktop/\+DA2.\+0-\/main/\mbox{\hyperlink{reader_8cpp}{reader.\+cpp}}\end{DoxyCompactItemize}

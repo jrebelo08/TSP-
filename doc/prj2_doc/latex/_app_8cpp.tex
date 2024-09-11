@@ -1,0 +1,984 @@
+\doxysection{C\+:/\+Users/rebel/\+Desktop/\+DA2.0-\/main/\+App.cpp File Reference}
+\hypertarget{_app_8cpp}{}\label{_app_8cpp}\index{C:/Users/rebel/Desktop/DA2.0-\/main/App.cpp@{C:/Users/rebel/Desktop/DA2.0-\/main/App.cpp}}
+{\ttfamily \#include "{}App.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include "{}reader.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a52415cdd4ebd90b2f977de751a826afc}{display4\+\_\+1menu}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_ae0b80db97f6a56acde15f0e0ee2df744}{display4\+\_\+2menu}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_aa92700e881e7d4d52d6e49baa334428e}{display4\+\_\+1menu\+Small\+Graph}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_ae6afa43b8274ccba10061c64b3435680}{display4\+\_\+1menu\+Small\+Graph\+Stadium}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a394de4979667ab977c34b234713e1d58}{display4\+\_\+1menu\+Small\+Graph\+Shipping}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a695c6117aa493847ec6a5af30c17f62e}{display4\+\_\+1menu\+Small\+Graph\+Tourism}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a50d523ca2be3d1575f866c63e5ccb16f}{display4\+\_\+1menu\+Medium\+Graph}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a6a43fcfb5fb62b395b94aa7c14ba895b}{display4\+\_\+1menu\+Medium}} (\mbox{\hyperlink{class_edge}{const}} std\+::string \&\mbox{\hyperlink{class_edge}{filename}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_abe55ca77d1048f9ac2dbdbe0e914d446}{display4\+\_\+2menu\+Small\+Graph}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_abdbeb4b92721ab28bc61e4b79313a3e2}{display4\+\_\+2menu\+Medium\+Graph}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a1d6a2c7e15c533dcade032a45708d95f}{display4\+\_\+2menu\+Large\+Graph}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a4d166b2b01ec7e38fafab03e18388275}{display4\+\_\+2menu\+Small\+Graph\+Stadium}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a4806ede59afcd5ad255782576ec433a7}{display4\+\_\+2menu\+Small\+Graph\+Shipping}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a643699bafab28d8cf8c715524ffea574}{display4\+\_\+2menu\+Small\+Graph\+Tourism}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a9c9dbf7f0e5ff2345f9b038a92585287}{display4\+\_\+2menu\+Medium}} (\mbox{\hyperlink{class_edge}{const}} std\+::string \&\mbox{\hyperlink{class_edge}{filename}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a599fd1bab12a190753faf9710ba33cf1}{display4\+\_\+2menu\+Large1}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{node\+ID}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a0207ed6bc8136d4d4059a73bf5df8245}{display4\+\_\+2menu\+Large2}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{node\+ID}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a2a63b427425a5be6d6a11e269abc3017}{display4\+\_\+2menu\+Large3}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{node\+ID}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a9c0d2ff9a8b78ae968c6647309380403}{display\+\_\+\+OHmenu}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_adae35a0c06610de6ca0d776a4ab6c71a}{display\+\_\+\+NNmenu}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a2522440338ed4e252449a6b1d498a169}{display\+\_\+\+NNmenu\+Small\+Graph}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a7877e6c1c886ecd1ead5cffa07fb2a92}{display\+\_\+\+NNmenu\+Medium\+Graph}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_ae47480bbcbe136c15066a047d88c320b}{get\+Value\+\_\+\+NNmenu\+Small\+Graph}} (\mbox{\hyperlink{class_edge}{const}} std\+::function$<$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$(\mbox{\hyperlink{class_reader}{Reader}} \&)$>$ \&\mbox{\hyperlink{class_edge}{read\+And\+Parse\+Func}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a1e915587ed945689368bdb029b1a6a70}{get\+Value\+\_\+\+NNmenu\+Small\+Graph\+Stadium}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a04753e7af29e56a883f381b9cb8d4743}{get\+Value\+\_\+\+NNmenu\+Small\+Graph\+Shipping}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a4f10c94f02faddf1b91efd3638ae6607}{get\+Value\+\_\+\+NNmenu\+Small\+Graph\+Tourism}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a28091acdd59404e4c886d72710cd9367}{get\+Value\+\_\+\+NNmenu\+Medium\+Graph}} (\mbox{\hyperlink{class_edge}{const}} std\+::string \&\mbox{\hyperlink{class_edge}{filename}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a7a5c8d4f5b97c673a092b924c02b7239}{display\+\_\+\+LINmenu}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_aaf4744460331a46050893307df1886f2}{display\+\_\+\+LINmenu\+Small\+Graph}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a8dc0da337daaed61afdd67a77ec065ac}{display\+\_\+\+LINmenu\+Medium\+Graph}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a28a2dcf9c1a266544f3cc0cf129e6f4c}{get\+Value\+\_\+\+LINmenu\+Small\+Graph}} (\mbox{\hyperlink{class_edge}{const}} std\+::function$<$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$(\mbox{\hyperlink{class_reader}{Reader}} \&)$>$ \&\mbox{\hyperlink{class_edge}{read\+And\+Parse\+Func}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_ad31c31bc0a8eb9805c23af4e1869758d}{get\+Value\+\_\+\+LINmenu\+Small\+Graph\+Stadium}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_aacbac052463c20d64e55ceed597a7922}{get\+Value\+\_\+\+LINmenu\+Small\+Graph\+Shipping}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a920e4abfce169dfb3581874b4328c160}{get\+Value\+\_\+\+LINmenu\+Small\+Graph\+Tourism}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a6740ba59271fe2a1bdb53b1f205bf958}{get\+Value\+\_\+\+LINmenu\+Medium\+Graph}} (\mbox{\hyperlink{class_edge}{const}} std\+::string \&\mbox{\hyperlink{class_edge}{filename}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_ab7f75e8bcdc6e81f2e16d87759d9a97a}{display\+\_\+\+Held\+Karp\+\_\+menu}} ()
+\begin{DoxyCompactList}\small\item\em Displays the main menu for selecting the size of the graph for the Held-\/\+Karp algorithm. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_acebdd2b19b2b58c6ec71f9c81ea098d8}{display\+\_\+\+Held\+Karp\+\_\+menu\+Small\+Graph}} ()
+\begin{DoxyCompactList}\small\item\em Displays the menu for selecting a specific small graph for the Held-\/\+Karp algorithm. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a363bc54b6c5ce0fd3e340c61326fe65d}{display\+\_\+\+Held\+Karp\+\_\+menu\+Medium\+Graph}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_ab8b52c646a55b959462d689622547741}{get\+Value\+\_\+\+Held\+Karp\+\_\+menu\+Small\+Graph}} (\mbox{\hyperlink{class_edge}{const}} std\+::function$<$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$(\mbox{\hyperlink{class_reader}{Reader}} \&)$>$ \&\mbox{\hyperlink{class_edge}{read\+And\+Parse\+Func}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a9ea86ac90bd1221bba7991a09e3edaa3}{get\+Value\+\_\+\+Held\+Karp\+\_\+menu\+Small\+Graph\+Stadium}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a9a4d999c3cd09aeb96060d9188014048}{get\+Value\+\_\+\+Held\+Karp\+\_\+menu\+Small\+Graph\+Shipping}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_aee6018004148b2bce39ac69f0996be71}{get\+Value\+\_\+\+Held\+Karp\+\_\+menu\+Small\+Graph\+Tourism}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a5e944462093a5d5f05a4a20a5cc7c748}{get\+Value\+\_\+\+Held\+Karp\+\_\+menu\+Medium\+Graph}} (\mbox{\hyperlink{class_edge}{const}} std\+::string \&\mbox{\hyperlink{class_edge}{filename}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_ac829999104b1a02b2e6f8ef1a37ea80b}{display\+\_\+\+CLUSTERmenu}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{cluster\+Option}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a4ae0f27d71f2d606d2cefb62ca6214f0}{display\+\_\+\+CLUSTERmenu\+Small\+Graph}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{cluster\+Option}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a3d6deb79c29880e18d5a723194ee77e2}{display\+\_\+\+CLUSTERmenu\+Medium\+Graph}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{cluster\+Option}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a79b4983dadc10fda6eacfc29e291684b}{get\+Value\+\_\+\+CLUSTERmenu\+Small\+Graph}} (\mbox{\hyperlink{class_edge}{const}} std\+::function$<$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$(\mbox{\hyperlink{class_reader}{Reader}} \&)$>$ \&\mbox{\hyperlink{class_edge}{read\+And\+Parse\+Func}}, \mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{cluster\+Option}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_acc099d70e2b45a4d377723732ea66798}{get\+Value\+\_\+\+CLUSTERmenu\+Small\+Graph\+Stadium}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{cluster\+Option}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a337efd7415bd5eb8d1478c6b3e23b96f}{get\+Value\+\_\+\+CLUSTERmenu\+Small\+Graph\+Shipping}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{cluster\+Option}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a2af8e4cfa40430e2b7a4e3619a4c8be0}{get\+Value\+\_\+\+CLUSTERmenu\+Small\+Graph\+Tourism}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{cluster\+Option}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a667b904abea0db9bd38a3bc365a3e10e}{get\+Value\+\_\+\+CLUSTERmenu\+Medium\+Graph}} (\mbox{\hyperlink{class_edge}{const}} std\+::string \&\mbox{\hyperlink{class_edge}{filename}}, \mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{cluster\+Option}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_ad895b6a5124b8a5b60c7362a8712ed17}{display\+\_\+\+NNmenu\+Large\+Graph}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_aa03ab1dd2265e8e733d930760036322a}{get\+Value\+\_\+\+NNsmall\+Graph}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{node\+ID}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a1c228e60ec66bea7fc7f8d1c04c0f017}{get\+Value\+\_\+\+NNmedium\+Graph}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{node\+ID}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a78814eabe4c36effd8863ca8004adadc}{get\+Value\+\_\+\+NNlarge\+Graph}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{node\+ID}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_abc87f1bdfdb2a69f267eef0fe74a9e46}{display\+\_\+\+RWmenu}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a78c1f87103c74405f07edd578a6d2afe}{get\+Value\+\_\+\+RWsmall\+Graph}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{node\+ID}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a51afdfb9deb0caa106becae07812f762}{get\+Value\+\_\+\+RWmedium\+Graph}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{node\+ID}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_ab92119151847322b227217a8322eb123}{get\+Value\+\_\+\+RWlarge\+Graph}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{node\+ID}})
+\item 
+std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \mbox{\hyperlink{_app_8cpp_acbf5427242969e63ceba7832b48500e5}{pre\+Order\+Traversal}} (\mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*}\mbox{\hyperlink{class_edge}{root}}, \mbox{\hyperlink{class_edge}{const}} std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&\mbox{\hyperlink{class_edge}{mst}})
+\begin{DoxyCompactList}\small\item\em Performs a pre-\/order traversal of a tree represented by an MST. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a1dbd8e7a73006c46a72a28058fbd3812}{tsp}} (\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{current\+Node}}, std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&\mbox{\hyperlink{class_edge}{path}}, \mbox{\hyperlink{class_edge}{double}} \mbox{\hyperlink{class_edge}{current\+Cost}}, \mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{class_edge}{level}}, \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&\mbox{\hyperlink{class_edge}{graph}}, std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&\mbox{\hyperlink{class_edge}{best\+Path}}, \mbox{\hyperlink{class_edge}{double}} \&\mbox{\hyperlink{class_edge}{best\+Cost}})
+\begin{DoxyCompactList}\small\item\em Solves the Traveling Salesman Problem (TSP) using a backtracking algorithm. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_ad4caf9dfd8b9749cd32299cd2833b16c}{held\+Karp}} (\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&\mbox{\hyperlink{class_edge}{graph}}, std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&\mbox{\hyperlink{class_edge}{best\+Path}}, \mbox{\hyperlink{class_edge}{double}} \&\mbox{\hyperlink{class_edge}{best\+Cost}})
+\begin{DoxyCompactList}\small\item\em Solves the Traveling Salesman Problem (TSP) using the Held-\/\+Karp algorithm. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_edge}{int}} \mbox{\hyperlink{_app_8cpp_a8396c50bf544009fb2fc4907b00cbad3}{main\+Menu}} ()
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a0434c80d410e90a3495fc8166a3ccd6f}{display4\+\_\+1menu\+Small\+Graph}} (\mbox{\hyperlink{class_edge}{const}} std\+::function$<$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$(\mbox{\hyperlink{class_reader}{Reader}} \&)$>$ \&\mbox{\hyperlink{class_edge}{read\+And\+Parse\+Func}})
+\item 
+\mbox{\hyperlink{class_edge}{void}} \mbox{\hyperlink{_app_8cpp_a744a32fd528ec68be41eeaf1917dc5de}{display4\+\_\+2menu\+Small}} (\mbox{\hyperlink{class_edge}{const}} std\+::function$<$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$(\mbox{\hyperlink{class_reader}{Reader}} \&)$>$ \&\mbox{\hyperlink{class_edge}{read\+And\+Parse\+Func}})
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_app_8cpp_a52415cdd4ebd90b2f977de751a826afc}\label{_app_8cpp_a52415cdd4ebd90b2f977de751a826afc} 
+\index{App.cpp@{App.cpp}!display4\_1menu@{display4\_1menu}}
+\index{display4\_1menu@{display4\_1menu}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_1menu()}{display4\_1menu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+1menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for the backtracking algorithm and allows the user to choose the size of the graph.
+
+\begin{DoxyRemark}{Remarks}
+This function interacts with the user to obtain input for graph size selection. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a6a43fcfb5fb62b395b94aa7c14ba895b}\label{_app_8cpp_a6a43fcfb5fb62b395b94aa7c14ba895b} 
+\index{App.cpp@{App.cpp}!display4\_1menuMedium@{display4\_1menuMedium}}
+\index{display4\_1menuMedium@{display4\_1menuMedium}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_1menuMedium()}{display4\_1menuMedium()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+1menu\+Medium (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Displays the menu for the backtracking algorithm with a specific medium graph size option and applies the TSP backtracking algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the medium-\/sized graph data to be processed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+This function reads and processes the specified medium-\/sized graph data before invoking the TSP algorithm. @timecomplexity O(n!). 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a50d523ca2be3d1575f866c63e5ccb16f}\label{_app_8cpp_a50d523ca2be3d1575f866c63e5ccb16f} 
+\index{App.cpp@{App.cpp}!display4\_1menuMediumGraph@{display4\_1menuMediumGraph}}
+\index{display4\_1menuMediumGraph@{display4\_1menuMediumGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_1menuMediumGraph()}{display4\_1menuMediumGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+1menu\+Medium\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for the backtracking algorithm with medium graph options and applies the TSP backtracking algorithm.
+
+\begin{DoxyRemark}{Remarks}
+This function interacts with the user to obtain input for selecting the size of the graph and then applies the TSP algorithm. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_aa92700e881e7d4d52d6e49baa334428e}\label{_app_8cpp_aa92700e881e7d4d52d6e49baa334428e} 
+\index{App.cpp@{App.cpp}!display4\_1menuSmallGraph@{display4\_1menuSmallGraph}}
+\index{display4\_1menuSmallGraph@{display4\_1menuSmallGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_1menuSmallGraph()}{display4\_1menuSmallGraph()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+1menu\+Small\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for the backtracking algorithm with small graph options and applies the TSP backtracking algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+And\+Parse\+Func} & A function object that reads and parses the graph data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+This function interacts with the user to obtain input for graph selection and then applies the TSP backtracking algorithm. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a0434c80d410e90a3495fc8166a3ccd6f}\label{_app_8cpp_a0434c80d410e90a3495fc8166a3ccd6f} 
+\index{App.cpp@{App.cpp}!display4\_1menuSmallGraph@{display4\_1menuSmallGraph}}
+\index{display4\_1menuSmallGraph@{display4\_1menuSmallGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_1menuSmallGraph()}{display4\_1menuSmallGraph()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+1menu\+Small\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::function$<$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$(\mbox{\hyperlink{class_reader}{Reader}} \&)$>$ \&}]{read\+And\+Parse\+Func }\end{DoxyParamCaption})}
+
+Displays the menu for the backtracking algorithm with small graph options and applies the TSP backtracking algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+And\+Parse\+Func} & A function object that reads and parses the graph data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+This function interacts with the user to obtain input for graph selection and then applies the TSP algorithm. @timecomplexity O(n!) 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a394de4979667ab977c34b234713e1d58}\label{_app_8cpp_a394de4979667ab977c34b234713e1d58} 
+\index{App.cpp@{App.cpp}!display4\_1menuSmallGraphShipping@{display4\_1menuSmallGraphShipping}}
+\index{display4\_1menuSmallGraphShipping@{display4\_1menuSmallGraphShipping}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_1menuSmallGraphShipping()}{display4\_1menuSmallGraphShipping()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+1menu\+Small\+Graph\+Shipping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for the backtracking algorithm with the shipping graph option and applies the TSP algorithm.
+
+\begin{DoxyRemark}{Remarks}
+This function reads and parses the shipping graph data before invoking the main menu for the backtracking algorithm. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_ae6afa43b8274ccba10061c64b3435680}\label{_app_8cpp_ae6afa43b8274ccba10061c64b3435680} 
+\index{App.cpp@{App.cpp}!display4\_1menuSmallGraphStadium@{display4\_1menuSmallGraphStadium}}
+\index{display4\_1menuSmallGraphStadium@{display4\_1menuSmallGraphStadium}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_1menuSmallGraphStadium()}{display4\_1menuSmallGraphStadium()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+1menu\+Small\+Graph\+Stadium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for the backtracking algorithm with the stadium graph option and applies the TSP algorithm.
+
+\begin{DoxyRemark}{Remarks}
+This function reads and parses the stadium graph data before invoking the main menu for the backtracking algorithm. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a695c6117aa493847ec6a5af30c17f62e}\label{_app_8cpp_a695c6117aa493847ec6a5af30c17f62e} 
+\index{App.cpp@{App.cpp}!display4\_1menuSmallGraphTourism@{display4\_1menuSmallGraphTourism}}
+\index{display4\_1menuSmallGraphTourism@{display4\_1menuSmallGraphTourism}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_1menuSmallGraphTourism()}{display4\_1menuSmallGraphTourism()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+1menu\+Small\+Graph\+Tourism (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for the backtracking algorithm with the tourism graph option and applies the TSP algorithm.
+
+\begin{DoxyRemark}{Remarks}
+This function reads and parses the tourism graph data before invoking the main menu for the backtracking algorithm. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_ae0b80db97f6a56acde15f0e0ee2df744}\label{_app_8cpp_ae0b80db97f6a56acde15f0e0ee2df744} 
+\index{App.cpp@{App.cpp}!display4\_2menu@{display4\_2menu}}
+\index{display4\_2menu@{display4\_2menu}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_2menu()}{display4\_2menu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+2menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for the triangular approximation heuristic and allows the user to choose the size of the graph.
+
+\begin{DoxyRemark}{Remarks}
+This function interacts with the user to obtain input for graph size selection. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a599fd1bab12a190753faf9710ba33cf1}\label{_app_8cpp_a599fd1bab12a190753faf9710ba33cf1} 
+\index{App.cpp@{App.cpp}!display4\_2menuLarge1@{display4\_2menuLarge1}}
+\index{display4\_2menuLarge1@{display4\_2menuLarge1}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_2menuLarge1()}{display4\_2menuLarge1()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+2menu\+Large1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{node\+ID }\end{DoxyParamCaption})}
+
+Displays the menu for the triangular approximation heuristic with the first large graph option and applies the TSP Triangular approach algorithm after fully connecting the graph.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+ID} & The ID of the starting node for the TSP algorithm.\\
+\hline
+\end{DoxyParams}
+@timecomplexity O(\+V\texorpdfstring{$^\wedge$}{\string^}2(log\+V)) This function reads and parses the first large graph data, computes the TSP tour, and prints the results. \Hypertarget{_app_8cpp_a0207ed6bc8136d4d4059a73bf5df8245}\label{_app_8cpp_a0207ed6bc8136d4d4059a73bf5df8245} 
+\index{App.cpp@{App.cpp}!display4\_2menuLarge2@{display4\_2menuLarge2}}
+\index{display4\_2menuLarge2@{display4\_2menuLarge2}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_2menuLarge2()}{display4\_2menuLarge2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+2menu\+Large2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{node\+ID }\end{DoxyParamCaption})}
+
+Displays the menu for the triangular approximation heuristic with the second large graph option and applies the TSP algorithm after fully connecting the graph.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+ID} & The ID of the starting node for the TSP algorithm.\\
+\hline
+\end{DoxyParams}
+@timecomplexity O(\+V\texorpdfstring{$^\wedge$}{\string^}2(log\+V)) This function reads and parses the second large graph data, computes the TSP tour, and prints the results. \Hypertarget{_app_8cpp_a2a63b427425a5be6d6a11e269abc3017}\label{_app_8cpp_a2a63b427425a5be6d6a11e269abc3017} 
+\index{App.cpp@{App.cpp}!display4\_2menuLarge3@{display4\_2menuLarge3}}
+\index{display4\_2menuLarge3@{display4\_2menuLarge3}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_2menuLarge3()}{display4\_2menuLarge3()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+2menu\+Large3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{node\+ID }\end{DoxyParamCaption})}
+
+Displays the menu for the triangular approximation heuristic with the third large graph option and applies the TSP algorithm after fully connecting the graph.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+ID} & The ID of the starting node for the TSP algorithm.\\
+\hline
+\end{DoxyParams}
+@timecomplexity O(\+V\texorpdfstring{$^\wedge$}{\string^}2(log\+V)) This function reads and parses the third large graph data, computes the TSP tour, and prints the results. \Hypertarget{_app_8cpp_a1d6a2c7e15c533dcade032a45708d95f}\label{_app_8cpp_a1d6a2c7e15c533dcade032a45708d95f} 
+\index{App.cpp@{App.cpp}!display4\_2menuLargeGraph@{display4\_2menuLargeGraph}}
+\index{display4\_2menuLargeGraph@{display4\_2menuLargeGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_2menuLargeGraph()}{display4\_2menuLargeGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+2menu\+Large\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for the triangular approximation heuristic with large graph options and applies the TSP Triangular approach algorithm after fully connecting the graph.
+
+This function interacts with the user to obtain input for selecting the size of the large graph and the starting node, then applies the TSP algorithm. \Hypertarget{_app_8cpp_a9c9dbf7f0e5ff2345f9b038a92585287}\label{_app_8cpp_a9c9dbf7f0e5ff2345f9b038a92585287} 
+\index{App.cpp@{App.cpp}!display4\_2menuMedium@{display4\_2menuMedium}}
+\index{display4\_2menuMedium@{display4\_2menuMedium}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_2menuMedium()}{display4\_2menuMedium()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+2menu\+Medium (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Displays the menu for the triangular approximation heuristic with a specific medium-\/sized graph option and applies the TSP Triangular approach algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the medium-\/sized graph data.\\
+\hline
+\end{DoxyParams}
+This function reads and processes the specified medium-\/sized graph data before applying the TSP algorithm. @timecomplexity O(\+V\texorpdfstring{$^\wedge$}{\string^}2(log\+V)) \Hypertarget{_app_8cpp_abdbeb4b92721ab28bc61e4b79313a3e2}\label{_app_8cpp_abdbeb4b92721ab28bc61e4b79313a3e2} 
+\index{App.cpp@{App.cpp}!display4\_2menuMediumGraph@{display4\_2menuMediumGraph}}
+\index{display4\_2menuMediumGraph@{display4\_2menuMediumGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_2menuMediumGraph()}{display4\_2menuMediumGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+2menu\+Medium\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for the triangular approximation heuristic with medium graph options and applies the TSP algorithm.
+
+This function interacts with the user to obtain input for selecting the size of the graph and then applies the TSP algorithm. \Hypertarget{_app_8cpp_a744a32fd528ec68be41eeaf1917dc5de}\label{_app_8cpp_a744a32fd528ec68be41eeaf1917dc5de} 
+\index{App.cpp@{App.cpp}!display4\_2menuSmall@{display4\_2menuSmall}}
+\index{display4\_2menuSmall@{display4\_2menuSmall}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_2menuSmall()}{display4\_2menuSmall()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+2menu\+Small (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::function$<$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$(\mbox{\hyperlink{class_reader}{Reader}} \&)$>$ \&}]{read\+And\+Parse\+Func }\end{DoxyParamCaption})}
+
+Displays the menu for the triangular approximation heuristic with a specific small graph size option and applies the TSP algorithm.
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+And\+Parse\+Func} & The function used to read and parse the small-\/sized graph data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+This function reads and processes the specified small-\/sized graph data before applying the TSP algorithm. @timecomplexity O(\+V\texorpdfstring{$^\wedge$}{\string^}2(log\+V)) 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_abe55ca77d1048f9ac2dbdbe0e914d446}\label{_app_8cpp_abe55ca77d1048f9ac2dbdbe0e914d446} 
+\index{App.cpp@{App.cpp}!display4\_2menuSmallGraph@{display4\_2menuSmallGraph}}
+\index{display4\_2menuSmallGraph@{display4\_2menuSmallGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_2menuSmallGraph()}{display4\_2menuSmallGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+2menu\+Small\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for the triangular approximation heuristic with small graph options and applies the TSP Triangular approach algorithm.
+
+\begin{DoxyRemark}{Remarks}
+This function interacts with the user to obtain input for selecting the size of the graph and then applies the TSP algorithm. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a4806ede59afcd5ad255782576ec433a7}\label{_app_8cpp_a4806ede59afcd5ad255782576ec433a7} 
+\index{App.cpp@{App.cpp}!display4\_2menuSmallGraphShipping@{display4\_2menuSmallGraphShipping}}
+\index{display4\_2menuSmallGraphShipping@{display4\_2menuSmallGraphShipping}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_2menuSmallGraphShipping()}{display4\_2menuSmallGraphShipping()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+2menu\+Small\+Graph\+Shipping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for the triangular approximation heuristic with the shipping graph option and applies the TSP algorithm.
+
+\begin{DoxyRemark}{Remarks}
+This function reads and processes the shipping graph data before applying the TSP algorithm. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a4d166b2b01ec7e38fafab03e18388275}\label{_app_8cpp_a4d166b2b01ec7e38fafab03e18388275} 
+\index{App.cpp@{App.cpp}!display4\_2menuSmallGraphStadium@{display4\_2menuSmallGraphStadium}}
+\index{display4\_2menuSmallGraphStadium@{display4\_2menuSmallGraphStadium}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_2menuSmallGraphStadium()}{display4\_2menuSmallGraphStadium()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+2menu\+Small\+Graph\+Stadium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for the triangular approximation heuristic with the stadium graph option and applies the TSP algorithm.
+
+\begin{DoxyRemark}{Remarks}
+This function reads and processes the stadium graph data before applying the TSP algorithm. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a643699bafab28d8cf8c715524ffea574}\label{_app_8cpp_a643699bafab28d8cf8c715524ffea574} 
+\index{App.cpp@{App.cpp}!display4\_2menuSmallGraphTourism@{display4\_2menuSmallGraphTourism}}
+\index{display4\_2menuSmallGraphTourism@{display4\_2menuSmallGraphTourism}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display4\_2menuSmallGraphTourism()}{display4\_2menuSmallGraphTourism()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display4\+\_\+2menu\+Small\+Graph\+Tourism (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for the triangular approximation heuristic with the tourism graph option and applies the TSP algorithm.
+
+\begin{DoxyRemark}{Remarks}
+This function reads and processes the tourism graph data before applying the TSP algorithm. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_ac829999104b1a02b2e6f8ef1a37ea80b}\label{_app_8cpp_ac829999104b1a02b2e6f8ef1a37ea80b} 
+\index{App.cpp@{App.cpp}!display\_CLUSTERmenu@{display\_CLUSTERmenu}}
+\index{display\_CLUSTERmenu@{display\_CLUSTERmenu}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_CLUSTERmenu()}{display\_CLUSTERmenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+CLUSTERmenu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{cluster\+Option }\end{DoxyParamCaption})}
+
+Displays a menu for selecting graph instances and applying the K-\/means Clustering Nearest Neighbor Algorithm heuristic. Users can choose between small and medium graph sizes or return to the main menu.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cluster\+Option} & The number of clusters for K-\/means clustering. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_a3d6deb79c29880e18d5a723194ee77e2}\label{_app_8cpp_a3d6deb79c29880e18d5a723194ee77e2} 
+\index{App.cpp@{App.cpp}!display\_CLUSTERmenuMediumGraph@{display\_CLUSTERmenuMediumGraph}}
+\index{display\_CLUSTERmenuMediumGraph@{display\_CLUSTERmenuMediumGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_CLUSTERmenuMediumGraph()}{display\_CLUSTERmenuMediumGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+CLUSTERmenu\+Medium\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{cluster\+Option }\end{DoxyParamCaption})}
+
+Displays the menu for selecting a medium graph instance for applying the K-\/means Clustering Nearest Neighbor Algorithm heuristic.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cluster\+Option} & The number of clusters for K-\/means clustering. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_a4ae0f27d71f2d606d2cefb62ca6214f0}\label{_app_8cpp_a4ae0f27d71f2d606d2cefb62ca6214f0} 
+\index{App.cpp@{App.cpp}!display\_CLUSTERmenuSmallGraph@{display\_CLUSTERmenuSmallGraph}}
+\index{display\_CLUSTERmenuSmallGraph@{display\_CLUSTERmenuSmallGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_CLUSTERmenuSmallGraph()}{display\_CLUSTERmenuSmallGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+CLUSTERmenu\+Small\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{cluster\+Option }\end{DoxyParamCaption})}
+
+Applies the K-\/means Clustering Nearest Neighbor Algorithm heuristic to a small graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+And\+Parse\+Func} & A function to read and parse the graph data. \\
+\hline
+{\em cluster\+Option} & The number of clusters for K-\/means clustering. @timecomplexity O(n\texorpdfstring{$^\wedge$}{\string^}2) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_ab7f75e8bcdc6e81f2e16d87759d9a97a}\label{_app_8cpp_ab7f75e8bcdc6e81f2e16d87759d9a97a} 
+\index{App.cpp@{App.cpp}!display\_HeldKarp\_menu@{display\_HeldKarp\_menu}}
+\index{display\_HeldKarp\_menu@{display\_HeldKarp\_menu}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_HeldKarp\_menu()}{display\_HeldKarp\_menu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+Held\+Karp\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the main menu for selecting the size of the graph for the Held-\/\+Karp algorithm. 
+
+This function provides a menu interface for the user to select between a small graph, medium graph, or exit to the main menu. \Hypertarget{_app_8cpp_a363bc54b6c5ce0fd3e340c61326fe65d}\label{_app_8cpp_a363bc54b6c5ce0fd3e340c61326fe65d} 
+\index{App.cpp@{App.cpp}!display\_HeldKarp\_menuMediumGraph@{display\_HeldKarp\_menuMediumGraph}}
+\index{display\_HeldKarp\_menuMediumGraph@{display\_HeldKarp\_menuMediumGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_HeldKarp\_menuMediumGraph()}{display\_HeldKarp\_menuMediumGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+Held\+Karp\+\_\+menu\+Medium\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays a menu for selecting medium graph instances and applying the Held-\/\+Karp Algorithm heuristic. Users can choose the number of edges in the graph to apply the Held-\/\+Karp Algorithm. \Hypertarget{_app_8cpp_acebdd2b19b2b58c6ec71f9c81ea098d8}\label{_app_8cpp_acebdd2b19b2b58c6ec71f9c81ea098d8} 
+\index{App.cpp@{App.cpp}!display\_HeldKarp\_menuSmallGraph@{display\_HeldKarp\_menuSmallGraph}}
+\index{display\_HeldKarp\_menuSmallGraph@{display\_HeldKarp\_menuSmallGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_HeldKarp\_menuSmallGraph()}{display\_HeldKarp\_menuSmallGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+Held\+Karp\+\_\+menu\+Small\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the menu for selecting a specific small graph for the Held-\/\+Karp algorithm. 
+
+This function provides a menu interface for the user to select between different predefined small graphs or to exit back to the main Held-\/\+Karp menu. \Hypertarget{_app_8cpp_a7a5c8d4f5b97c673a092b924c02b7239}\label{_app_8cpp_a7a5c8d4f5b97c673a092b924c02b7239} 
+\index{App.cpp@{App.cpp}!display\_LINmenu@{display\_LINmenu}}
+\index{display\_LINmenu@{display\_LINmenu}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_LINmenu()}{display\_LINmenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+LINmenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays a menu for selecting the Lin-\/\+Kernighan Algorithm heuristic and the size of the graph. Users can choose between small and medium graphs to apply the Lin-\/\+Kernighan Algorithm. \Hypertarget{_app_8cpp_a8dc0da337daaed61afdd67a77ec065ac}\label{_app_8cpp_a8dc0da337daaed61afdd67a77ec065ac} 
+\index{App.cpp@{App.cpp}!display\_LINmenuMediumGraph@{display\_LINmenuMediumGraph}}
+\index{display\_LINmenuMediumGraph@{display\_LINmenuMediumGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_LINmenuMediumGraph()}{display\_LINmenuMediumGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+LINmenu\+Medium\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays a menu for selecting medium graph instances and applying the Lin\+Kernighan heuristic algorithm. The user can choose the number of edges in the graph and apply the Lin\+Kernighan heuristic accordingly. \Hypertarget{_app_8cpp_aaf4744460331a46050893307df1886f2}\label{_app_8cpp_aaf4744460331a46050893307df1886f2} 
+\index{App.cpp@{App.cpp}!display\_LINmenuSmallGraph@{display\_LINmenuSmallGraph}}
+\index{display\_LINmenuSmallGraph@{display\_LINmenuSmallGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_LINmenuSmallGraph()}{display\_LINmenuSmallGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+LINmenu\+Small\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays a menu for selecting small graph instances and applying the Lin-\/\+Kernighan Algorithm heuristic. Users can choose between different types of small graphs, such as stadium, shipping, and tourism graphs. \Hypertarget{_app_8cpp_adae35a0c06610de6ca0d776a4ab6c71a}\label{_app_8cpp_adae35a0c06610de6ca0d776a4ab6c71a} 
+\index{App.cpp@{App.cpp}!display\_NNmenu@{display\_NNmenu}}
+\index{display\_NNmenu@{display\_NNmenu}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_NNmenu()}{display\_NNmenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+NNmenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays a menu for selecting small graph instances and applying the Nearest Neighbor algorithm. \Hypertarget{_app_8cpp_ad895b6a5124b8a5b60c7362a8712ed17}\label{_app_8cpp_ad895b6a5124b8a5b60c7362a8712ed17} 
+\index{App.cpp@{App.cpp}!display\_NNmenuLargeGraph@{display\_NNmenuLargeGraph}}
+\index{display\_NNmenuLargeGraph@{display\_NNmenuLargeGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_NNmenuLargeGraph()}{display\_NNmenuLargeGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+NNmenu\+Large\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for selecting a real-\/world TSP instance to solve using various algorithms.
+
+This menu allows the user to choose between different graph instances and starting nodes.
+
+
+\begin{DoxyItemize}
+\item Graph1(\textquotesingle{}Small\textquotesingle{})\+: Small-\/sized graph instance.
+\item Graph2(\+Medium)\+: Medium-\/sized graph instance.
+\item Graph3(\+Large)\+: Large-\/sized graph instance.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+This function interacts with the user to obtain input for starting nodes and algorithm selection. 
+\end{DoxyNote}
+\Hypertarget{_app_8cpp_a7877e6c1c886ecd1ead5cffa07fb2a92}\label{_app_8cpp_a7877e6c1c886ecd1ead5cffa07fb2a92} 
+\index{App.cpp@{App.cpp}!display\_NNmenuMediumGraph@{display\_NNmenuMediumGraph}}
+\index{display\_NNmenuMediumGraph@{display\_NNmenuMediumGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_NNmenuMediumGraph()}{display\_NNmenuMediumGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+NNmenu\+Medium\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays a menu for selecting medium graph instances and applying the Nearest Neighbor heuristic algorithm. The user can choose the number of edges in the graph and apply the Nearest Neighbor algorithm accordingly. \Hypertarget{_app_8cpp_a2522440338ed4e252449a6b1d498a169}\label{_app_8cpp_a2522440338ed4e252449a6b1d498a169} 
+\index{App.cpp@{App.cpp}!display\_NNmenuSmallGraph@{display\_NNmenuSmallGraph}}
+\index{display\_NNmenuSmallGraph@{display\_NNmenuSmallGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_NNmenuSmallGraph()}{display\_NNmenuSmallGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+NNmenu\+Small\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays a menu for selecting small graph instances and applying the Nearest Neighbor algorithm. \Hypertarget{_app_8cpp_a9c0d2ff9a8b78ae968c6647309380403}\label{_app_8cpp_a9c0d2ff9a8b78ae968c6647309380403} 
+\index{App.cpp@{App.cpp}!display\_OHmenu@{display\_OHmenu}}
+\index{display\_OHmenu@{display\_OHmenu}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_OHmenu()}{display\_OHmenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+OHmenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays a menu for selecting other heuristics and algorithms to apply to the TSP. \Hypertarget{_app_8cpp_abc87f1bdfdb2a69f267eef0fe74a9e46}\label{_app_8cpp_abc87f1bdfdb2a69f267eef0fe74a9e46} 
+\index{App.cpp@{App.cpp}!display\_RWmenu@{display\_RWmenu}}
+\index{display\_RWmenu@{display\_RWmenu}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{display\_RWmenu()}{display\_RWmenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} display\+\_\+\+RWmenu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the menu for selecting a real-\/world TSP instance to solve using various algorithms.
+
+This menu allows the user to choose between different graph instances and starting nodes.
+
+
+\begin{DoxyItemize}
+\item Graph1(\textquotesingle{}Small\textquotesingle{})\+: Small-\/sized graph instance.
+\item Graph2(\+Medium)\+: Medium-\/sized graph instance.
+\item Graph3(\+Large)\+: Large-\/sized graph instance.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{Note}
+This function interacts with the user to obtain input for starting nodes and algorithm selection. 
+\end{DoxyNote}
+\Hypertarget{_app_8cpp_a667b904abea0db9bd38a3bc365a3e10e}\label{_app_8cpp_a667b904abea0db9bd38a3bc365a3e10e} 
+\index{App.cpp@{App.cpp}!getValue\_CLUSTERmenuMediumGraph@{getValue\_CLUSTERmenuMediumGraph}}
+\index{getValue\_CLUSTERmenuMediumGraph@{getValue\_CLUSTERmenuMediumGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_CLUSTERmenuMediumGraph()}{getValue\_CLUSTERmenuMediumGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+CLUSTERmenu\+Medium\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::string \&}]{filename,  }\item[{\mbox{\hyperlink{class_edge}{int}}}]{cluster\+Option }\end{DoxyParamCaption})}
+
+Applies the K-\/means Clustering Nearest Neighbor Algorithm heuristic to a medium graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the graph data. \\
+\hline
+{\em cluster\+Option} & The number of clusters for K-\/means clustering. @timecomplexity O(n\texorpdfstring{$^\wedge$}{\string^}2) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_a79b4983dadc10fda6eacfc29e291684b}\label{_app_8cpp_a79b4983dadc10fda6eacfc29e291684b} 
+\index{App.cpp@{App.cpp}!getValue\_CLUSTERmenuSmallGraph@{getValue\_CLUSTERmenuSmallGraph}}
+\index{getValue\_CLUSTERmenuSmallGraph@{getValue\_CLUSTERmenuSmallGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_CLUSTERmenuSmallGraph()}{getValue\_CLUSTERmenuSmallGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+CLUSTERmenu\+Small\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::function$<$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$(\mbox{\hyperlink{class_reader}{Reader}} \&)$>$ \&}]{read\+And\+Parse\+Func,  }\item[{\mbox{\hyperlink{class_edge}{int}}}]{cluster\+Option }\end{DoxyParamCaption})}
+
+Applies the K-\/means Clustering Nearest Neighbor Algorithm heuristic to a small graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+And\+Parse\+Func} & A function to read and parse the graph data. \\
+\hline
+{\em cluster\+Option} & The number of clusters for K-\/means clustering. @timecomplexity O(n\texorpdfstring{$^\wedge$}{\string^}2) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_a337efd7415bd5eb8d1478c6b3e23b96f}\label{_app_8cpp_a337efd7415bd5eb8d1478c6b3e23b96f} 
+\index{App.cpp@{App.cpp}!getValue\_CLUSTERmenuSmallGraphShipping@{getValue\_CLUSTERmenuSmallGraphShipping}}
+\index{getValue\_CLUSTERmenuSmallGraphShipping@{getValue\_CLUSTERmenuSmallGraphShipping}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_CLUSTERmenuSmallGraphShipping()}{getValue\_CLUSTERmenuSmallGraphShipping()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+CLUSTERmenu\+Small\+Graph\+Shipping (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{cluster\+Option }\end{DoxyParamCaption})}
+
+Applies the K-\/means Clustering Nearest Neighbor Algorithm heuristic to a small shipping graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cluster\+Option} & The number of clusters for K-\/means clustering. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_acc099d70e2b45a4d377723732ea66798}\label{_app_8cpp_acc099d70e2b45a4d377723732ea66798} 
+\index{App.cpp@{App.cpp}!getValue\_CLUSTERmenuSmallGraphStadium@{getValue\_CLUSTERmenuSmallGraphStadium}}
+\index{getValue\_CLUSTERmenuSmallGraphStadium@{getValue\_CLUSTERmenuSmallGraphStadium}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_CLUSTERmenuSmallGraphStadium()}{getValue\_CLUSTERmenuSmallGraphStadium()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+CLUSTERmenu\+Small\+Graph\+Stadium (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{cluster\+Option }\end{DoxyParamCaption})}
+
+Applies the K-\/means Clustering Nearest Neighbor Algorithm heuristic to a small stadium graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cluster\+Option} & The number of clusters for K-\/means clustering. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_a2af8e4cfa40430e2b7a4e3619a4c8be0}\label{_app_8cpp_a2af8e4cfa40430e2b7a4e3619a4c8be0} 
+\index{App.cpp@{App.cpp}!getValue\_CLUSTERmenuSmallGraphTourism@{getValue\_CLUSTERmenuSmallGraphTourism}}
+\index{getValue\_CLUSTERmenuSmallGraphTourism@{getValue\_CLUSTERmenuSmallGraphTourism}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_CLUSTERmenuSmallGraphTourism()}{getValue\_CLUSTERmenuSmallGraphTourism()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+CLUSTERmenu\+Small\+Graph\+Tourism (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{cluster\+Option }\end{DoxyParamCaption})}
+
+Applies the K-\/means Clustering Nearest Neighbor Algorithm heuristic to a small tourism graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cluster\+Option} & The number of clusters for K-\/means clustering. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_a5e944462093a5d5f05a4a20a5cc7c748}\label{_app_8cpp_a5e944462093a5d5f05a4a20a5cc7c748} 
+\index{App.cpp@{App.cpp}!getValue\_HeldKarp\_menuMediumGraph@{getValue\_HeldKarp\_menuMediumGraph}}
+\index{getValue\_HeldKarp\_menuMediumGraph@{getValue\_HeldKarp\_menuMediumGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_HeldKarp\_menuMediumGraph()}{getValue\_HeldKarp\_menuMediumGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+Held\+Karp\+\_\+menu\+Medium\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Applies the Held-\/\+Karp algorithm to a medium graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the graph data to be read and parsed. This should include the path to the file. @timecomplexity The time complexity is O(n\texorpdfstring{$^\wedge$}{\string^}2 \texorpdfstring{$\ast$}{*} 2\texorpdfstring{$^\wedge$}{\string^}n), where \textquotesingle{}n\textquotesingle{} is the number of vertices in the graph. The space complexity is O(n \texorpdfstring{$\ast$}{*} 2\texorpdfstring{$^\wedge$}{\string^}n). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_ab8b52c646a55b959462d689622547741}\label{_app_8cpp_ab8b52c646a55b959462d689622547741} 
+\index{App.cpp@{App.cpp}!getValue\_HeldKarp\_menuSmallGraph@{getValue\_HeldKarp\_menuSmallGraph}}
+\index{getValue\_HeldKarp\_menuSmallGraph@{getValue\_HeldKarp\_menuSmallGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_HeldKarp\_menuSmallGraph()}{getValue\_HeldKarp\_menuSmallGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+Held\+Karp\+\_\+menu\+Small\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::function$<$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$(\mbox{\hyperlink{class_reader}{Reader}} \&)$>$ \&}]{read\+And\+Parse\+Func }\end{DoxyParamCaption})}
+
+Applies the Held-\/\+Karp algorithm to a small graph instance using the provided reader function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+And\+Parse\+Func} & A function that reads and parses the graph data. It should return a Graph$<$int$>$ object. @timecomplexity The time complexity is O(n\texorpdfstring{$^\wedge$}{\string^}2 \texorpdfstring{$\ast$}{*} 2\texorpdfstring{$^\wedge$}{\string^}n), where \textquotesingle{}n\textquotesingle{} is the number of vertices in the graph. The space complexity is O(n \texorpdfstring{$\ast$}{*} 2\texorpdfstring{$^\wedge$}{\string^}n). \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_a9a4d999c3cd09aeb96060d9188014048}\label{_app_8cpp_a9a4d999c3cd09aeb96060d9188014048} 
+\index{App.cpp@{App.cpp}!getValue\_HeldKarp\_menuSmallGraphShipping@{getValue\_HeldKarp\_menuSmallGraphShipping}}
+\index{getValue\_HeldKarp\_menuSmallGraphShipping@{getValue\_HeldKarp\_menuSmallGraphShipping}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_HeldKarp\_menuSmallGraphShipping()}{getValue\_HeldKarp\_menuSmallGraphShipping()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+Held\+Karp\+\_\+menu\+Small\+Graph\+Shipping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Applies the Held-\/\+Karp algorithm to a shipping graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+And\+Parse\+Shipping} & A lambda function that reads and parses the shipping graph data. It should take a reference to a \doxylink{class_reader}{Reader} object and return a Graph$<$int$>$ object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_a9ea86ac90bd1221bba7991a09e3edaa3}\label{_app_8cpp_a9ea86ac90bd1221bba7991a09e3edaa3} 
+\index{App.cpp@{App.cpp}!getValue\_HeldKarp\_menuSmallGraphStadium@{getValue\_HeldKarp\_menuSmallGraphStadium}}
+\index{getValue\_HeldKarp\_menuSmallGraphStadium@{getValue\_HeldKarp\_menuSmallGraphStadium}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_HeldKarp\_menuSmallGraphStadium()}{getValue\_HeldKarp\_menuSmallGraphStadium()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+Held\+Karp\+\_\+menu\+Small\+Graph\+Stadium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Applies the Held-\/\+Karp algorithm to a stadium graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+And\+Parse\+Stadium} & A lambda function that reads and parses the stadium graph data. It should take a reference to a \doxylink{class_reader}{Reader} object and return a Graph$<$int$>$ object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_aee6018004148b2bce39ac69f0996be71}\label{_app_8cpp_aee6018004148b2bce39ac69f0996be71} 
+\index{App.cpp@{App.cpp}!getValue\_HeldKarp\_menuSmallGraphTourism@{getValue\_HeldKarp\_menuSmallGraphTourism}}
+\index{getValue\_HeldKarp\_menuSmallGraphTourism@{getValue\_HeldKarp\_menuSmallGraphTourism}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_HeldKarp\_menuSmallGraphTourism()}{getValue\_HeldKarp\_menuSmallGraphTourism()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+Held\+Karp\+\_\+menu\+Small\+Graph\+Tourism (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Applies the Held-\/\+Karp algorithm to a tourism graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+And\+Parse\+Tourism} & A lambda function that reads and parses the tourism graph data. It should take a reference to a \doxylink{class_reader}{Reader} object and return a Graph$<$int$>$ object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_a6740ba59271fe2a1bdb53b1f205bf958}\label{_app_8cpp_a6740ba59271fe2a1bdb53b1f205bf958} 
+\index{App.cpp@{App.cpp}!getValue\_LINmenuMediumGraph@{getValue\_LINmenuMediumGraph}}
+\index{getValue\_LINmenuMediumGraph@{getValue\_LINmenuMediumGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_LINmenuMediumGraph()}{getValue\_LINmenuMediumGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+LINmenu\+Medium\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Applies the Lin-\/\+Kernighan Algorithm heuristic to a medium graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the graph data to be read and parsed. This should include the path to the file. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The time complexity of the Lin-\/\+Kernighan algorithm O(n\texorpdfstring{$^\wedge$}{\string^}3), where n is the number of vertices in the graph. The algorithm has a better approximation than the Nearest\+Neighbour heuristics but scales worse
+\begin{DoxyItemize}
+\item @timecomplexity O(n\texorpdfstring{$^\wedge$}{\string^}2log(n)) 
+\end{DoxyItemize}
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a28a2dcf9c1a266544f3cc0cf129e6f4c}\label{_app_8cpp_a28a2dcf9c1a266544f3cc0cf129e6f4c} 
+\index{App.cpp@{App.cpp}!getValue\_LINmenuSmallGraph@{getValue\_LINmenuSmallGraph}}
+\index{getValue\_LINmenuSmallGraph@{getValue\_LINmenuSmallGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_LINmenuSmallGraph()}{getValue\_LINmenuSmallGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+LINmenu\+Small\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::function$<$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$(\mbox{\hyperlink{class_reader}{Reader}} \&)$>$ \&}]{read\+And\+Parse\+Func }\end{DoxyParamCaption})}
+
+Applies the Lin-\/\+Kernighan algorithm to a small graph instance using the provided reader function.
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+And\+Parse\+Func} & A function that reads and parses the graph data. It should return a Graph$<$int$>$ object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+The time complexity of the Lin-\/\+Kernighan algorithm O(n\texorpdfstring{$^\wedge$}{\string^}3), where n is the number of vertices in the graph. The algorithm has a better approximation than the Nearest\+Neighbour heuristics but scales worse @timecomplexity O(n\texorpdfstring{$^\wedge$}{\string^}2log(n)) 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_aacbac052463c20d64e55ceed597a7922}\label{_app_8cpp_aacbac052463c20d64e55ceed597a7922} 
+\index{App.cpp@{App.cpp}!getValue\_LINmenuSmallGraphShipping@{getValue\_LINmenuSmallGraphShipping}}
+\index{getValue\_LINmenuSmallGraphShipping@{getValue\_LINmenuSmallGraphShipping}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_LINmenuSmallGraphShipping()}{getValue\_LINmenuSmallGraphShipping()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+LINmenu\+Small\+Graph\+Shipping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Applies the Lin-\/\+Kernighan Algorithm heuristic to a shipping graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+And\+Parse\+Shipping} & A lambda function that reads and parses the shipping graph data. It should take a reference to a \doxylink{class_reader}{Reader} object and return a Graph$<$int$>$ object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_ad31c31bc0a8eb9805c23af4e1869758d}\label{_app_8cpp_ad31c31bc0a8eb9805c23af4e1869758d} 
+\index{App.cpp@{App.cpp}!getValue\_LINmenuSmallGraphStadium@{getValue\_LINmenuSmallGraphStadium}}
+\index{getValue\_LINmenuSmallGraphStadium@{getValue\_LINmenuSmallGraphStadium}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_LINmenuSmallGraphStadium()}{getValue\_LINmenuSmallGraphStadium()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+LINmenu\+Small\+Graph\+Stadium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Applies the Lin-\/\+Kernighan Algorithm heuristic to a stadium graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+And\+Parse\+Stadium} & A lambda function that reads and parses the stadium graph data. It should take a reference to a \doxylink{class_reader}{Reader} object and return a Graph$<$int$>$ object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_a920e4abfce169dfb3581874b4328c160}\label{_app_8cpp_a920e4abfce169dfb3581874b4328c160} 
+\index{App.cpp@{App.cpp}!getValue\_LINmenuSmallGraphTourism@{getValue\_LINmenuSmallGraphTourism}}
+\index{getValue\_LINmenuSmallGraphTourism@{getValue\_LINmenuSmallGraphTourism}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_LINmenuSmallGraphTourism()}{getValue\_LINmenuSmallGraphTourism()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+LINmenu\+Small\+Graph\+Tourism (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Applies the Lin-\/\+Kernighan Algorithm heuristic to a tourism graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em read\+And\+Parse\+Tourism} & A lambda function that reads and parses the tourism graph data. It should take a reference to a \doxylink{class_reader}{Reader} object and return a Graph$<$int$>$ object. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_a78814eabe4c36effd8863ca8004adadc}\label{_app_8cpp_a78814eabe4c36effd8863ca8004adadc} 
+\index{App.cpp@{App.cpp}!getValue\_NNlargeGraph@{getValue\_NNlargeGraph}}
+\index{getValue\_NNlargeGraph@{getValue\_NNlargeGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_NNlargeGraph()}{getValue\_NNlargeGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+NNlarge\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{node\+ID }\end{DoxyParamCaption})}
+
+Solves the real-\/world TSP problem for a large-\/sized graph instance starting from the specified node.
+
+This function reads and parses the large-\/sized graph instance, performs the nearest neighbor algorithm starting from the given node, and prints the resulting tour along with its total distance and execution time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+ID} & The ID of the starting node for the TSP algorithm.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function interacts with the user to obtain input for starting nodes.
+\end{DoxyNote}
+\begin{DoxyRemark}{Remarks}
+The time complexity of the nearest neighbor algorithm used in this function is O(n\texorpdfstring{$^\wedge$}{\string^}2), where n is the number of vertices in the graph. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a1c228e60ec66bea7fc7f8d1c04c0f017}\label{_app_8cpp_a1c228e60ec66bea7fc7f8d1c04c0f017} 
+\index{App.cpp@{App.cpp}!getValue\_NNmediumGraph@{getValue\_NNmediumGraph}}
+\index{getValue\_NNmediumGraph@{getValue\_NNmediumGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_NNmediumGraph()}{getValue\_NNmediumGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+NNmedium\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{node\+ID }\end{DoxyParamCaption})}
+
+Solves the real-\/world TSP problem for a large-\/sized graph instance starting from the specified node.
+
+This function reads and parses the large-\/sized graph instance, performs the nearest neighbor algorithm starting from the given node, and prints the resulting tour along with its total distance and execution time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+ID} & The ID of the starting node for the TSP algorithm.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function interacts with the user to obtain input for starting nodes.
+\end{DoxyNote}
+\begin{DoxyRemark}{Remarks}
+The time complexity of the nearest neighbor algorithm used in this function is O(n\texorpdfstring{$^\wedge$}{\string^}2), where n is the number of vertices in the graph. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a28091acdd59404e4c886d72710cd9367}\label{_app_8cpp_a28091acdd59404e4c886d72710cd9367} 
+\index{App.cpp@{App.cpp}!getValue\_NNmenuMediumGraph@{getValue\_NNmenuMediumGraph}}
+\index{getValue\_NNmenuMediumGraph@{getValue\_NNmenuMediumGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_NNmenuMediumGraph()}{getValue\_NNmenuMediumGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+NNmenu\+Medium\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::string \&}]{filename }\end{DoxyParamCaption})}
+
+Applies the Nearest Neighbor algorithm to a medium graph instance.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & The filename of the graph data to be read and parsed. This should include the path to the file. Time Complexity\+: O(n\texorpdfstring{$^\wedge$}{\string^}2), where \textquotesingle{}n\textquotesingle{} is the number of vertices in the graph. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{_app_8cpp_ae47480bbcbe136c15066a047d88c320b}\label{_app_8cpp_ae47480bbcbe136c15066a047d88c320b} 
+\index{App.cpp@{App.cpp}!getValue\_NNmenuSmallGraph@{getValue\_NNmenuSmallGraph}}
+\index{getValue\_NNmenuSmallGraph@{getValue\_NNmenuSmallGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_NNmenuSmallGraph()}{getValue\_NNmenuSmallGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+NNmenu\+Small\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} std\+::function$<$ \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$(\mbox{\hyperlink{class_reader}{Reader}} \&)$>$ \&}]{read\+And\+Parse\+Func }\end{DoxyParamCaption})}
+
+Applies the Nearest Neighbor algorithm to the stadium graph instance. Time Complexity\+: O(n\texorpdfstring{$^\wedge$}{\string^}2), where \textquotesingle{}n\textquotesingle{} is the number of vertices in the graph. \Hypertarget{_app_8cpp_a04753e7af29e56a883f381b9cb8d4743}\label{_app_8cpp_a04753e7af29e56a883f381b9cb8d4743} 
+\index{App.cpp@{App.cpp}!getValue\_NNmenuSmallGraphShipping@{getValue\_NNmenuSmallGraphShipping}}
+\index{getValue\_NNmenuSmallGraphShipping@{getValue\_NNmenuSmallGraphShipping}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_NNmenuSmallGraphShipping()}{getValue\_NNmenuSmallGraphShipping()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+NNmenu\+Small\+Graph\+Shipping (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Applies the Nearest Neighbor algorithm to the tourism graph instance. \Hypertarget{_app_8cpp_a1e915587ed945689368bdb029b1a6a70}\label{_app_8cpp_a1e915587ed945689368bdb029b1a6a70} 
+\index{App.cpp@{App.cpp}!getValue\_NNmenuSmallGraphStadium@{getValue\_NNmenuSmallGraphStadium}}
+\index{getValue\_NNmenuSmallGraphStadium@{getValue\_NNmenuSmallGraphStadium}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_NNmenuSmallGraphStadium()}{getValue\_NNmenuSmallGraphStadium()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+NNmenu\+Small\+Graph\+Stadium (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Applies the Nearest Neighbor algorithm to the shipping graph instance. \Hypertarget{_app_8cpp_a4f10c94f02faddf1b91efd3638ae6607}\label{_app_8cpp_a4f10c94f02faddf1b91efd3638ae6607} 
+\index{App.cpp@{App.cpp}!getValue\_NNmenuSmallGraphTourism@{getValue\_NNmenuSmallGraphTourism}}
+\index{getValue\_NNmenuSmallGraphTourism@{getValue\_NNmenuSmallGraphTourism}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_NNmenuSmallGraphTourism()}{getValue\_NNmenuSmallGraphTourism()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+NNmenu\+Small\+Graph\+Tourism (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Applies the Nearest Neighbor algorithm to the tourism graph instance. \Hypertarget{_app_8cpp_aa03ab1dd2265e8e733d930760036322a}\label{_app_8cpp_aa03ab1dd2265e8e733d930760036322a} 
+\index{App.cpp@{App.cpp}!getValue\_NNsmallGraph@{getValue\_NNsmallGraph}}
+\index{getValue\_NNsmallGraph@{getValue\_NNsmallGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_NNsmallGraph()}{getValue\_NNsmallGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+NNsmall\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{node\+ID }\end{DoxyParamCaption})}
+
+Solves the real-\/world TSP problem for a large-\/sized graph instance starting from the specified node.
+
+This function reads and parses the large-\/sized graph instance, performs the nearest neighbor algorithm starting from the given node, and prints the resulting tour along with its total distance and execution time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+ID} & The ID of the starting node for the TSP algorithm.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function interacts with the user to obtain input for starting nodes.
+\end{DoxyNote}
+\begin{DoxyRemark}{Remarks}
+The time complexity of the nearest neighbor algorithm used in this function is O(n\texorpdfstring{$^\wedge$}{\string^}2), where n is the number of vertices in the graph. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_ab92119151847322b227217a8322eb123}\label{_app_8cpp_ab92119151847322b227217a8322eb123} 
+\index{App.cpp@{App.cpp}!getValue\_RWlargeGraph@{getValue\_RWlargeGraph}}
+\index{getValue\_RWlargeGraph@{getValue\_RWlargeGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_RWlargeGraph()}{getValue\_RWlargeGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+RWlarge\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{node\+ID }\end{DoxyParamCaption})}
+
+Solves the real-\/world TSP problem for a large-\/sized graph instance starting from the specified node.
+
+This function reads and parses the large-\/sized graph instance, performs the nearest neighbor algorithm starting from the given node, and prints the resulting tour along with its total distance and execution time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+ID} & The ID of the starting node for the TSP algorithm.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function interacts with the user to obtain input for starting nodes.
+\end{DoxyNote}
+\begin{DoxyRemark}{Remarks}
+The time complexity of the nearest neighbor algorithm used in this function is O(n\texorpdfstring{$^\wedge$}{\string^}2), where n is the number of vertices in the graph. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a51afdfb9deb0caa106becae07812f762}\label{_app_8cpp_a51afdfb9deb0caa106becae07812f762} 
+\index{App.cpp@{App.cpp}!getValue\_RWmediumGraph@{getValue\_RWmediumGraph}}
+\index{getValue\_RWmediumGraph@{getValue\_RWmediumGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_RWmediumGraph()}{getValue\_RWmediumGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+RWmedium\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{node\+ID }\end{DoxyParamCaption})}
+
+Solves the real-\/world TSP problem for a medium-\/sized graph instance starting from the specified node.
+
+This function reads and parses the medium-\/sized graph instance, performs the nearest neighbor algorithm starting from the given node, and prints the resulting tour along with its total distance and execution time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+ID} & The ID of the starting node for the TSP algorithm.\\
+\hline
+\end{DoxyParams}
+@timecomplexity O(n\texorpdfstring{$^\wedge$}{\string^}2)
+
+\begin{DoxyNote}{Note}
+This function interacts with the user to obtain input for starting nodes. 
+\end{DoxyNote}
+\Hypertarget{_app_8cpp_a78c1f87103c74405f07edd578a6d2afe}\label{_app_8cpp_a78c1f87103c74405f07edd578a6d2afe} 
+\index{App.cpp@{App.cpp}!getValue\_RWsmallGraph@{getValue\_RWsmallGraph}}
+\index{getValue\_RWsmallGraph@{getValue\_RWsmallGraph}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{getValue\_RWsmallGraph()}{getValue\_RWsmallGraph()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} get\+Value\+\_\+\+RWsmall\+Graph (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{node\+ID }\end{DoxyParamCaption})}
+
+Solves the real-\/world TSP problem for a small-\/sized graph instance starting from the specified node.
+
+This function reads and parses the small-\/sized graph instance, performs the nearest neighbor algorithm starting from the given node, and prints the resulting tour along with its total distance and execution time.
+
+
+\begin{DoxyParams}{Parameters}
+{\em node\+ID} & The ID of the starting node for the TSP algorithm.\\
+\hline
+\end{DoxyParams}
+@timecomplexity O(n\texorpdfstring{$^\wedge$}{\string^}2)
+
+\begin{DoxyNote}{Note}
+This function interacts with the user to obtain input for starting nodes. 
+\end{DoxyNote}
+\Hypertarget{_app_8cpp_ad4caf9dfd8b9749cd32299cd2833b16c}\label{_app_8cpp_ad4caf9dfd8b9749cd32299cd2833b16c} 
+\index{App.cpp@{App.cpp}!heldKarp@{heldKarp}}
+\index{heldKarp@{heldKarp}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{heldKarp()}{heldKarp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} held\+Karp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{const}} \mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&}]{graph,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&}]{best\+Path,  }\item[{\mbox{\hyperlink{class_edge}{double}} \&}]{best\+Cost }\end{DoxyParamCaption})}
+
+
+
+Solves the Traveling Salesman Problem (TSP) using the Held-\/\+Karp algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em graph} & The graph representing the TSP problem. \\
+\hline
+{\em best\+Path} & The best path found by the algorithm. \\
+\hline
+{\em best\+Cost} & The cost of the best path found.\\
+\hline
+\end{DoxyParams}
+This function applies the Held-\/\+Karp algorithm to find the optimal solution for the TSP. @timecomplexity The time complexity of this function is O(2\texorpdfstring{$^\wedge$}{\string^}n \texorpdfstring{$\ast$}{*} n\texorpdfstring{$^\wedge$}{\string^}2), where n is the number of vertices in the graph. \begin{DoxyRemark}{Remarks}
+Pros\+: Guarantees the optimal solution for the TSP. Suitable for small to medium-\/sized graphs. Cons\+: High time complexity, impractical for large graphs due to exponential growth. 
+\end{DoxyRemark}
+\Hypertarget{_app_8cpp_a8396c50bf544009fb2fc4907b00cbad3}\label{_app_8cpp_a8396c50bf544009fb2fc4907b00cbad3} 
+\index{App.cpp@{App.cpp}!mainMenu@{mainMenu}}
+\index{mainMenu@{mainMenu}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{mainMenu()}{mainMenu()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{int}} main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the main menu and handles user interaction to choose between different TSP algorithms and heuristics.
+
+\begin{DoxyReturn}{Returns}
+0 indicating successful execution. 
+\end{DoxyReturn}
+\Hypertarget{_app_8cpp_acbf5427242969e63ceba7832b48500e5}\label{_app_8cpp_acbf5427242969e63ceba7832b48500e5} 
+\index{App.cpp@{App.cpp}!preOrderTraversal@{preOrderTraversal}}
+\index{preOrderTraversal@{preOrderTraversal}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{preOrderTraversal()}{preOrderTraversal()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ pre\+Order\+Traversal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_vertex}{Vertex}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*}}]{root,  }\item[{\mbox{\hyperlink{class_edge}{const}} std\+::vector$<$ \mbox{\hyperlink{class_edge}{Edge}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \texorpdfstring{$\ast$}{*} $>$ \&}]{mst }\end{DoxyParamCaption})}
+
+
+
+Performs a pre-\/order traversal of a tree represented by an MST. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em root} & The root vertex of the tree. \\
+\hline
+{\em mst} & The minimum spanning tree (MST) represented by a vector of edges. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A vector containing the vertices visited in pre-\/order traversal. @timecomplexity The time complexity of this function depends on the size of the MST and the efficiency of the pre-\/order traversal algorithm. Typically, it has a time complexity of O(V + E), where V is the number of vertices and E is the number of edges in the MST. 
+\end{DoxyReturn}
+\Hypertarget{_app_8cpp_a1dbd8e7a73006c46a72a28058fbd3812}\label{_app_8cpp_a1dbd8e7a73006c46a72a28058fbd3812} 
+\index{App.cpp@{App.cpp}!tsp@{tsp}}
+\index{tsp@{tsp}!App.cpp@{App.cpp}}
+\doxysubsubsection{\texorpdfstring{tsp()}{tsp()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_edge}{void}} tsp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_edge}{int}}}]{current\+Node,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&}]{path,  }\item[{\mbox{\hyperlink{class_edge}{double}}}]{current\+Cost,  }\item[{\mbox{\hyperlink{class_edge}{int}}}]{level,  }\item[{\mbox{\hyperlink{class_graph}{Graph}}$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&}]{graph,  }\item[{std\+::vector$<$ \mbox{\hyperlink{class_edge}{int}} $>$ \&}]{best\+Path,  }\item[{\mbox{\hyperlink{class_edge}{double}} \&}]{best\+Cost }\end{DoxyParamCaption})}
+
+
+
+Solves the Traveling Salesman Problem (TSP) using a backtracking algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em current\+Node} & The current node being visited. \\
+\hline
+{\em path} & The current path being explored. \\
+\hline
+{\em current\+Cost} & The current cost of the path. \\
+\hline
+{\em level} & The level of recursion. \\
+\hline
+{\em graph} & The graph representing the TSP problem. \\
+\hline
+{\em best\+Path} & The best path found so far. \\
+\hline
+{\em best\+Cost} & The cost of the best path found so far.\\
+\hline
+\end{DoxyParams}
+This function recursively explores possible paths using a backtracking algorithm and updates the best path and cost found. @timecomplexity O(n!). 
